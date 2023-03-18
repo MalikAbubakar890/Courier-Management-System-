@@ -1,79 +1,168 @@
-<link href="css/footer.css" rel="stylesheet">
- <table border="0" align="center" width="100%">
-          <tbody><tr bgcolor="#ee6012">
-            <td class="aalpha" bgcolor="#FFFFFF" height="19"><div class="lowerstyle style1" align="center"></div></td>
-          </tr>
-      </tbody></table></td>
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
-  <tbody><tr>
-    <td colspan="2" class="aalpha" bgcolor="#ee6012" height="25"><div align="center"></div></td>
-  </tr>
-  <tr>
-  <td>
-<footer class="container-fluid" style="background-color:rgb(26,26,26); width:100%;">
-     <div class="container">
-         <div class="row footer1">
-		     <div class="col-sm-3">
-			    <p>ABOUT US</p>
-				 <label>Courier Management System  is a global supplier of transport and logistics solutions. We have offices in more than 20 countries and an international network of partners and agents.</label>
-			 </div>
-			 
-			 <div class="col-sm-3">
-			    <p>USEFUL LINKS</p>
-				<ul class="list-unstyled">
-				<li><a href="all-services.php" >All Services</a> </li>
-					<li><a href="ocean.php" >Ocean Freight Forwarding</a> </li>
-					<li><a href="road.php" >Road Freight Forwarding </a> </li>
-					<li><a href="air.php" >Air Freight Forwarding</a> </li>
-					 <li><a href="ground.php" >Ground Transport</a> </li>
-					<li><a href="warehouse.php" >Warehousing</a> </li>
-					</ul>
-			 </div>
-			 
-			 <div class="col-sm-3">
-			     <p>COMPANY INFORMATION</p>
-				 <ul class="list-unstyled">
-				     <li>Company Adress</li>
-					 <li><br><br></li>
-					  <li><img src="images/contact.png"> &nbsp +91- 123456789</li>
-					  <li><img src="images/email.png"> &nbsp  example@gmail.com </li>
-					  <li><label>Aliganj Lucknow, India</label></li>
-				 </ul>
-			 </div>
-			 
-			 <div class="col-sm-3">
-			    <p>NEWSLETTER SIGN UP</p>
-					 <label>Sign up today for tips and latest news and exclusive special offers.</label>
-				<ul class="list-unstyled">
-				<li></li>
-				<li><input type="email" class="form-control" id="emailtxt" placeholder="Enter Your Email" name="email"/><br> </li>
-				<li><button type="submit" id="btnsubmit" class="btn btn-default footerbtn">SUBMIT</button>
-				<li><br></li>
-				<li><div class="footer1-border"><a href="#"><img src="images/fb-footer.png"></a><a href="#"><img src="images/twitter-footer.png"></a></div></li>
-				</ul>
-			 </div>
-			 </div>
-		    <div class="footer2">
-			
-			<div class="row" >
-			
-			<div class="col-sm-6">
-			<strong  style="float:left;color:gray;"> ©Courier Management System 2018.All right reserved</strong>
-			</div>
-			
-			<div class="col-sm-6">
-			<div style="float:right;">
-			<img src="images/master.png">
-			<img src="images/visa.png">
-			<img src="images/american-express.png">
-			<img src="images/discover.png">
-			</div>
-			</div>
-			
-			</div>
-			
-		 </div>
-    </footer>
-	  </td>
-  </tr>
-</tbody></table>
+<!-- SweetAlert2 -->
+<script src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="assets/plugins/toastr/toastr.min.js"></script>
+<!-- Switch Toggle -->
+<script src="assets/plugins/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
+<!-- Select2 -->
+<script src="assets/plugins/select2/js/select2.full.min.js"></script>
+<!-- Summernote -->
+<script src="assets/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- dropzonejs -->
+<script src="assets/plugins/dropzone/min/dropzone.min.js"></script>
+<script src="assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- DateTimePicker -->
+  <script src="assets/dist/js/jquery.datetimepicker.full.min.js"></script>
+  <!-- Bootstrap Switch -->
+<script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+
+ 
+
+<script>
+
+	$(document).ready(function(){
+	  $('.select2').select2({
+	    placeholder:"Please select here",
+	    width: "100%"
+	  });
+  })
+	 window.start_load = function(){
+	    $('body').prepend('<div id="preloader2"></div>')
+	  }
+	  window.end_load = function(){
+	    $('#preloader2').fadeOut('fast', function() {
+	        $(this).remove();
+	      })
+	  }
+	 window.viewer_modal = function($src = ''){
+	    start_load()
+	    var t = $src.split('.')
+	    t = t[1]
+	    if(t =='mp4'){
+	      var view = $("<video src='"+$src+"' controls autoplay></video>")
+	    }else{
+	      var view = $("<img src='"+$src+"' />")
+	    }
+	    $('#viewer_modal .modal-content video,#viewer_modal .modal-content img').remove()
+	    $('#viewer_modal .modal-content').append(view)
+	    $('#viewer_modal').modal({
+	            show:true,
+	            backdrop:'static',
+	            keyboard:false,
+	            focus:true
+	          })
+	          end_load()  
+
+	}
+	  window.uni_modal = function($title = '' , $url='',$size=""){
+	      start_load()
+	      $.ajax({
+	          url:$url,
+	          error:err=>{
+	              console.log()
+	              alert("An error occured")
+	          },
+	          success:function(resp){
+	              if(resp){
+	                  $('#uni_modal .modal-title').html($title)
+	                  $('#uni_modal .modal-body').html(resp)
+	                  if($size != ''){
+	                      $('#uni_modal .modal-dialog').addClass($size)
+	                  }else{
+	                      $('#uni_modal .modal-dialog').removeAttr("class").addClass("modal-dialog modal-md")
+	                  }
+	                  $('#uni_modal').modal({
+	                    show:true,
+	                    backdrop:'static',
+	                    keyboard:false,
+	                    focus:true
+	                  })
+	                  end_load()
+	              }
+	          }
+	      })
+	  }
+	  window._conf = function($msg='',$func='',$params = []){
+	     $('#confirm_modal #confirm').attr('onclick',$func+"("+$params.join(',')+")")
+	     $('#confirm_modal .modal-body').html($msg)
+	     $('#confirm_modal').modal('show')
+	  }
+	   window.alert_toast= function($msg = 'TEST',$bg = 'success' ,$pos=''){
+	   	 var Toast = Swal.mixin({
+	      toast: true,
+	      position: $pos || 'top-end',
+	      showConfirmButton: false,
+	      timer: 5000
+	    });
+	      Toast.fire({
+	        icon: $bg,
+	        title: $msg
+	      })
+	  }
+$(function () {
+  bsCustomFileInput.init();
+
+    $('.summernote').summernote({
+        height: 300,
+        toolbar: [
+            [ 'style', [ 'style' ] ],
+            [ 'font', [ 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear'] ],
+            [ 'fontname', [ 'fontname' ] ],
+            [ 'fontsize', [ 'fontsize' ] ],
+            [ 'color', [ 'color' ] ],
+            [ 'para', [ 'ol', 'ul', 'paragraph', 'height' ] ],
+            [ 'table', [ 'table' ] ],
+            [ 'view', [ 'undo', 'redo', 'fullscreen', 'codeview', 'help' ] ]
+        ]
+    })
+
+     $('.datetimepicker').datetimepicker({
+		  format:'Y/m/d H:i',
+		})
+    
+
+  })
+ $(".switch-toggle").bootstrapToggle();
+$('.number').on('input keyup keypress',function(){
+        var val = $(this).val()
+        val = val.replace(/[^0-9]/, '');
+        val = val.replace(/,/g, '');
+        val = val > 0 ? parseFloat(val).toLocaleString("en-US") : 0;
+        $(this).val(val)
+    })
+</script>
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/dist/js/adminlte.js"></script>
+
+<!-- PAGE assets/plugins -->
+<!-- jQuery Mapael -->
+<script src="assets/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="assets/plugins/raphael/raphael.min.js"></script>
+<script src="assets/plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="assets/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="assets/plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="assets/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="assets/dist/js/pages/dashboard2.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="assets/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="assets/plugins/jszip/jszip.min.js"></script>
+<script src="assets/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="assets/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+	

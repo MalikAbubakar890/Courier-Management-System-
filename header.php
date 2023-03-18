@@ -1,78 +1,53 @@
-<?php
-//session_start();
-?>
-<link rel="stylesheet" href="css/topheader.css" type="text/css"> 
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
-  <tbody>
-  <tr>
-    <td>
-<style type="text/css">
-<!--
-.style2 {color: #FFFFFF}
--->
-</style>
-<link href="css/form.css" rel="stylesheet" type="text/css">
-  <?php include 'topheader.php';?>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-<tr bgcolor="#2284d5">
-<td height="30" width="110"><div align="center"><span class="headtext13 style2"><strong>SHIPMENT:</strong></span></div></td>
-<td height="30" width="83"><div class="lowerstyle anchor" align="center"> <a href="view-request.php">Pickup Request</a></div></td>
-<td height="30" width="83"><div class="lowerstyle anchor" align="center"> <a href="add-courier.php">Add</a></div></td>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php 
+  date_default_timezone_set("Asia/Manila");
+  
+  ob_start();
+  $title = isset($_GET['page']) ? ucwords(str_replace("_", ' ', $_GET['page'])) : "Home";
+  $title = str_replace("Persons Companies","Persons/Companies",$title);
+  ?>
+  <title><?php echo $title ?> | <?php echo $_SESSION['system']['name'] ?></title>
+  <?php ob_end_flush() ?>
 
-<td height="30" width="74"> <div class="lowerstyle anchor" align="center"><a href="courier-list.php">Update  </a></div></td>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- DataTables -->
+  <link rel="stylesheet" href="assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+   <!-- Select2 -->
+  <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+   <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="assets/plugins/dropzone/min/dropzone.min.css">
+  <!-- DateTimePicker -->
+  <link rel="stylesheet" href="assets/dist/css/jquery.datetimepicker.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Switch Toggle -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap4-toggle/css/bootstrap4-toggle.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/dist/css/styles.css">
+	<script src="assets/plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+ <!-- summernote -->
+  <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
+  
 
-<td width="89"><div class="lowerstyle" align="center">
-  <div class="anchor" align="center"><a href="search-edit.php">Search &amp; Edit </a></div>
-</div></td>
 
-<td height="30" width="96"><div align="center"><span class="headtext13 style2"><strong>REPORTS</strong></span><span class="heading"><strong> : </strong></span></div></td>
-<td height="30" width="83"><div class="lowerstyle anchor" align="center"><a href="delivered-list.php">Delivered </a> </div></td>
 
-<td width="76"><div class="lowerstyle anchor" align="center"><a href="datewise-list.php">Datewise </a> </div></td>
 
-<td width="76"><div class="lowerstyle anchor" align="center"><a href="registration.php">Add new user </a> </div></td>
-<td width="3">&nbsp;</td>
-<td width="71"><div class="lowerstyle" align="center"><a href="http://tracking4web.com/admin/report_statuswise.php?status=all"></a> </div></td>
-<td width="3"></td>
-<td height="30" width="80">
 
-</td>
-</tr>
 
-</tbody></table>
 
-<?php
-if(isset($_SESSION['user_type']) && $_SESSION['user_type'] == 'admin-role') {
-?>
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody><tr style="height:25px;">
-    <td bgcolor="#E2E2E2" width="4">&nbsp;</td>
-    <td bgcolor="#E2E2E2" width="240">&nbsp;<b>Admin Menu</b></td>
-    <td bgcolor="#E2E2E2" width="130"><div align="center anchor"><a href="offices-list.php" class="headtext13 anchor">Office Details</a></div></td>
-    <td bgcolor="#E2E2E2" width="10">|</td>
-	
-    <td bgcolor="#E2E2E2" width="100"><div align="center anchor"><a href="add-office.php" class="headtext13">Add New Office</a></div></td>
-    <td bgcolor="#E2E2E2" width="10">|</td>
-	<td bgcolor="#E2E2E2" width="162"><div align="center anchor"><a href="manager-list.php" class="headtext13">Manager Details</a> </div></td>
-    <td bgcolor="#E2E2E2" width="7">|</td>
-    <td bgcolor="#E2E2E2" width="125"><div align="center anchor"><a href="add-new-officer.php" class="headtext13">Add New Manager</a></div></td>
-  </tr>
-</tbody>
-</table>
-<?php 
-}
-?>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody><tr style="height:25px;">
-    <td bgcolor="#99CCFF" width="4">&nbsp;</td>
-    <td bgcolor="#99CCFF" width="350">&nbsp;</td>
-    <td bgcolor="#99CCFF" width="130"><div align="center"><a href="admin.php" class="headtext13 anchor"></a></div></td>
-    <td bgcolor="#99CCFF" width="10"></td>
-    <td bgcolor="#99CCFF" width="162"><div align="center"><a href="admin.php" class="headtext13 anchor">Home</a> </div></td>
-    <td bgcolor="#99CCFF" width="7">|</td>
-    <td bgcolor="#99CCFF" width="125"><div align="center"><a href="process.php?action=logOut" class="headtext13 anchor">Logout</a></div></td>
-  </tr>
-</tbody>
-</table>
+  
+</head>

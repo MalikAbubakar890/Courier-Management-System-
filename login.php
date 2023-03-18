@@ -1,196 +1,99 @@
-<?php
-session_start();
-error_reporting(0);
-
-require_once('database.php');
-require_once('library.php');
-$error = "";
-if(isset($_POST['txtusername'])){
-	$error = checkUser($_POST['txtusername'],$_POST['txtpassword'],$_POST['OfficeName']);
-}//if
-
-require_once('database.php');
-$sql = "SELECT DISTINCT(off_name)
-		FROM tbl_offices";
-$result = dbQuery($sql);
-
-
-
-?>
-
+<!DOCTYPE html>
+<html lang="en">
 <?php 
+session_start();
+include('db_connect.php');
+  ob_start();
+  // if(!isset($_SESSION['system'])){
 
-
-if(isset($_POST['registration'])){
-header("registration.php");
-	
-}
-
+    $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
+    foreach($system as $k => $v){
+      $_SESSION['system'][$k] = $v;
+    }
+  // }
+  ob_end_flush();
+?>
+<?php 
+if(isset($_SESSION['login_id']))
+header("location:dashboard.php?page=home");
 
 ?>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
-<title>Login</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/mystyle.css" rel="stylesheet" type="text/css">
-<link href="css/form.css" rel="stylesheet" type="text/css">
-<script language="javascript">
-<!--
- function memloginvalidate()
-{
-   if(document.form1.txtusername.value == "")
-     {
-        alert("Please enter admin UserName.");
-        document.form1.txtusername.focus();
-        return false;
-     }
-   if(document.form1.txtpassword.value == "")
-     {
-        alert("Please enter admin Password.");
-        document.form1.txtpassword.focus();
-        return false;
-     }
-   } 
-
-//-->
-</script></head>
-
-
-<body onLoad="document.form1.txtusername.focus();">
-<table id="Outer" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" align="center" width="780">
-  <tbody><tr>
-    <td><table id="inner" border="0" cellpadding="3" cellspacing="3" height="500" align="center" width="96%">
-      <tbody><tr>
-        <td>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-.style2 {color: #FFFFFF}
--->
-</style>
-<table border="0" cellpadding="0" cellspacing="0" width="782">
-<tbody><tr>
-<td colspan="15"><img src="images/trheader.jpg" height="109" width="780"></td>
-</tr>
-
-		
-
-
-
-      
-      <tr>
-        <td><div align="center">
-          <span class="redtext"><strong>          </strong></span><br>  
-              <br>
+<?php include 'header.php' ?>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="#"><b><?php echo $_SESSION['system']['name'] ?> - Admin</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <form action="" id="login-form">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" name="email" required placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fa fa-envelope"></span>
+            </div>
+          </div>
         </div>
-          <table border="0" cellpadding="0" cellspacing="0" align="center" width="300">
-            <tbody><tr>
-              <td width="18"><img src="images/boxtopleftcorner.gif" alt="" height="13" width="18"></td>
-              <td background="images/boxtopBG.gif" width="734"></td>
-              <td width="18"><img src="images/boxtoprightcorner.gif" alt="" height="13" width="18"></td>
-            </tr>
-            <tr>
-              <td background="images/boxleftBG.gif"></td>
-              <td><table border="0" cellpadding="0" cellspacing="0" align="center" width="98%">
-                  <tbody><tr>
-                    <td colspan="2" height="4"></td>
-                  </tr>
-                  <tr>
-                    <td height="18"><table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tbody><tr>
-                        <td colspan="3" class="smalltextgrey" width="378">
-						</td>
-                      </tr>
-                    </tbody></table></td>
-                  </tr>
-                  <tr>
-                    <td><table class="GreenBox" border="0" cellpadding="0" cellspacing="0" align="center" width="300">
-                      <tbody><tr>
-                        <form name="form1" id="form1" method="post" onSubmit="return memloginvalidate()">
-                          <td><table bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="1" width="100%">
-                              <tbody><tr>
-                                <td colspan="3" class="smalltextgrey">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td colspan="3" class="smalltextgrey">
-								<div class="headtext13" align="center"><strong>Administrator Login Area </strong></div></td>
-                              </tr>
-                              <tr>
-                                <td colspan="3" height="10">
-								<font color="#FF0000" style="font-size:12px;">
-								<?php echo $error; ?>
-								</font>
-								</td>
-                                </tr>
-                              <tr>
-                                <td width="115">&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:12px;">Username</font></td>
-                                <td width="3">:</td>
-                                <td width="160">
-								<input name="txtusername" class="forminput" id="txtusername" maxlength="30" type="text"></td>
-                              </tr>
-                              <tr>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:12px;">Password</font></td>
-                                <td>:</td>
-                                <td><input name="txtpassword" class="forminput" id="txtpassword" maxlength="20" type="password"></td>
-                              </tr>
-							  <tr>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:12px;">Office</font></td>
-                                <td>:</td>
-                                <td>
-								<select class="select" name="OfficeName">
-			<?php 
-			while($data = dbFetchAssoc($result)){
-			?>
-			<option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-			<?php 
-			}//while
-			?>
-			</select>
-								</td>
-                              </tr>
-                              <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td><input name="Submit" class="green-button" value="Login" type="submit" style="">
-                               
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" name="password" required placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fa fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+<script>
+  $(document).ready(function(){
+    $('#login-form').submit(function(e){
+    e.preventDefault()
+    start_load()
+    if($(this).find('.alert-danger').length > 0 )
+      $(this).find('.alert-danger').remove();
+    $.ajax({
+      url:'ajax.php?action=login',
+      method:'POST',
+      data:$(this).serialize(),
+      error:err=>{
+        console.log(err)
+        end_load();
 
+      },
+      success:function(resp){
+        if(resp == 1){
+          location.href ='dashboard.php?page=new_parcel';
+        }else{
+          $('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
+          end_load();
+        }
+      }
+    })
+  })
+  })
+</script>
+<?php include 'footer.php' ?>
 
-                             </td> </tr>
-                          </tbody>
-						  </table>
-						  </form>
-						  </td>
-                        
-                      </tr>
-                    </tbody></table></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-              </tbody></table></td>
-              <td background="images/boxrightBG.gif"></td>
-            </tr>
-            <tr>
-              <td width="18"><img src="images/boxbtmleftcorner.gif" alt="" height="12" width="18"></td>
-              <td background="images/boxbtmBG.gif" width="734"></td>
-              <td width="18"><img src="images/boxbtmrightcorner.gif" alt="" height="12" width="18"></td>
-            </tr>
-          </tbody></table>
-          <br>
-          <br></td>
-      </tr>
-      <tr>
-        <td><table border="0" cellpadding="0" cellspacing="0" align="center" width="780">
-  <tbody><tr>
-    <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
-    <td bgcolor="#2284d5" width="304"><div align="right"></div></td>
-  </tr>
-</tbody></table>
-</td>
-      </tr>
-      
-    </tbody></table></td>
-  </tr>
-</tbody></table>
-</td></tr></tbody></table></body></html>
+</body>
+</html>

@@ -1,0 +1,195 @@
+.toast{
+  display: none;
+  min-width: 20vw
+}
+.toast.show {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    z-index: 99999999;
+    margin: 20px;
+    right: 0;
+    top: 3.5rem;
+}
+.card-footer{
+  background-color: #4bcaff;
+  color: white;
+}
+  .save-btn {
+    color: white !important;
+    background-color: rgb(255 193 7) !important;
+    font-weight: bold !important;
+}
+.swal2-container{
+    z-index: 99999999;
+}
+.dropdown-menu-account{
+  border-bottom: 1px solid gainsboro;
+}
+.dropdown-menu-btn a{
+    background: skyblue;
+    color: white;
+    border: antiquewhite;
+}
+.card{
+    background-color: #4bcaff63;
+    /*color: white;*/
+}
+.dropdown-menu-btn a:hover{
+    background: #00b5ff;
+    color: white;
+}
+#preloader2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #ffffff82;
+}
+.main-header{
+  background-color: white;
+  height: 65px;
+}
+#preloader2:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1977cc;
+  border-top-color: #d1e6f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: smaller;
+    color: #000000cf;
+    font-style: italic;
+}
+ .modal-dialog.large {
+    width: 80% !important;
+    max-width: unset;
+  }
+  .modal-dialog.mid-large {
+    width: 50% !important;
+    max-width: unset;
+  }
+  #viewer_modal .btn-close {
+    position: absolute;
+    z-index: 999999;
+    /*right: -4.5em;*/
+    background: unset;
+    color: white;
+    border: unset;
+    font-size: 27px;
+    top: 0;
+}
+#viewer_modal .modal-dialog {
+        width: 80%;
+    max-width: unset;
+    height: calc(90%);
+    max-height: unset;
+}
+  #viewer_modal .modal-content {
+       background: black;
+    border: unset;
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #viewer_modal img,#viewer_modal video{
+    max-height: calc(100%);
+    max-width: calc(100%);
+  }
+  label:not(.form-check-label):not(.custom-file-label){
+    font-weight: 400 !important;
+  }
+  .card-tool a{
+    margin-left: auto;
+  }
+  .table thead th{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid gainsboro !important;
+  }
+  table.table-bordered.dataTable{
+    border: none !important;
+  }
+  table.table-bordered.dataTable tbody td{
+    border: none !important;
+  }
+  tbody tr td b {
+    font-weight: 400;
+}
+  tbody tr td a i {
+    font-weight: 300 !important;
+}   
+  tbody tr td button {
+    color:red !important;
+}    
+  tbody tr td .view_parcel {
+    color:#007bff !important;
+}  
+  tbody tr {
+   border-bottom: 1px solid gainsboro !important;
+}
+.card-tool a{
+    background-color: #22aae2;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+.nav-flat .nav-item>.nav-link>.nav-icon{
+  font-weight: 200;
+}
+.card-footer button{
+  width: 110px;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+    background-color: rgb(74 202 255);
+    color: #343a40;
+}
+[class*=sidebar-dark-] .nav-flat .nav-item .nav-treeview>.nav-item>.nav-link, [class*=sidebar-dark-] .nav-flat .nav-item .nav-treeview>.nav-item>.nav-link.active {
+    border-color: rgb(74 202 255);
+}
+.save-btn{
+  color: white;
+  background-color: rgb(74 202 255);
+}
+.brand-link img{
+  width: 50px;
+  height: 40px;
+}
+.brand-link{
+  text-align: center;
+}
