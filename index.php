@@ -21,7 +21,7 @@
                             </blockquote>
                         </div><!-- //.claim -->
                         <ul class="buttons">
-                            <li><a href="track-shipment.html" title="Track Shipments | Apex Logistics" class="btn">Track Shipments</a></li>
+                            <li><a href="track-courier.php" title="Track Shipments | Apex Logistics" class="btn">Track Parcel</a></li>
                             <li><a href="who-we-are/company.html" title="International Shipping, Logistics, & Warehousing" class="btn">Learn More</a></li>
                         </ul>
                     </div>
@@ -138,7 +138,7 @@
                                         Deliver a Powerful Customer Experience</p>
                                     <div class="teaser-content">
                                         <p>Maintaining customer loyalty and momentum in an on-demand, delivery culture starts with the subject matter experts. Learn how we can support your international freight shipments and business goals.</p>
-                                        <a href="contact/index.html" title="Contact us" class="btn">Let’s Talk</a>
+                                        <a href="contact.php" title="Contact us" class="btn">Let’s Talk</a>
                                     </div>
                                 </div>
                             </div>
