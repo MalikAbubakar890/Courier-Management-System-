@@ -67,7 +67,7 @@
 
             <div class="row"> <strong> With a presence in 70 countries across six continents, 42 offices, 2,500+ dedicated employees, and consistent, dependable services, Apex continues to grow rapidly and deliver passion worldwide.</strong></div>
 
-               <div class="row"> <img src="images\where-we-are-en.jfif"></div>
+               <div class="row"> <img src="images\where-we-are-en.jfif "></div>
 
 
 
