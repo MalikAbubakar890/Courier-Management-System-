@@ -16,7 +16,7 @@
 
             <div class="row">
                 <div class="col">
-                    <h1>Contact Us</h1>
+                    <h1>Get a Qoute</h1>
     
                 </div>
             </div>

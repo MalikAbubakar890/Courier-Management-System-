@@ -2,25 +2,32 @@
         <div class="row">
             <div class="col">
                 <nav>
-                    <div class="languageSwitchMobile">
+                    <!-- <div class="languageSwitchMobile">
                         <div class="languageNavigation"><a class="btn" href="#!">Languages</a>
                             <ul class="language-dropdown">
                                 <li class="en active"><a class="en active" title="International Shipping, Logistics, & Warehousing" href="index.html">English</a></li>
                                 <li class="zh "><a class="zh " title="International Shipping, Logistics, & Warehousing" href="zh/index.html">Chinese</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
+                    <ul class="navi navi-main">
+                        <li class="home mx-3"><a title="home" href="index.php" class="home">Home</a></li>
+                        <li class="aboutus mx-3"><a title="aboutus" href="aboutus.php" class="aboutus">About US</a></li>
+                        <li class="Contact mx-3"><a title="Contact" href="contact.php" class="Contact">Contact</a></li>
+
+
+                    </ul>
 
 
                     <ul class="unstyled-list topLineContacts">
                         <li>
-                            <a href="aboutus.php" title="">About Us</a>
+                            <a href="aboutus.php" title=""></a>
                         </li>
                         <li>
-                            <a href="contact.php" title="">Contact</a>
+                            <a href="contact.php" title=""></a>
                         </li>
                         <li>
-                            <a href="login.php" title="Track Shipments | Apex Logistics">Login</a>
+                            <a href="login.php" title="Track Shipments | Apex Logistics"></a>
                         </li>
                         <li>
                             <a class="phone" href="tel:+923032740775" title="+923032740775"><i class="fa-default fa-phone"></i> <span>+923032740775</span></a> </li>

@@ -42,6 +42,7 @@ s.parentNode.insertBefore(zi, s);
     <link rel="stylesheet" href="css/print.css" media="print">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/less/mixins/grid-framework.less">
 <!-- Facebook Pixel Code -->
 
 <script>

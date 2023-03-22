@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col medium-6">
 
-                        <p><a href="who-we-are/company.html" title="International Shipping, Logistics, &amp; Warehousing">Apex Logistics International, Inc.</a>&nbsp;taps into breakthrough technologies and powerful trade lanes so you can focus on your customers. Ship with confidence&mdash;tracking each freight journey from origin to customer from your convenient online portal.</p>
+                        <p><a href="javascript:void(0)" title="International Shipping, Logistics, &amp; Warehousing">Apex Logistics International, Inc.</a>&nbsp;taps into breakthrough technologies and powerful trade lanes so you can focus on your customers. Ship with confidence&mdash;tracking each freight journey from origin to customer from your convenient online portal.</p>
                         <p>Since the start of the millennium, we&rsquo;ve built each partnership and strategy around unique client goal posts and business challenges. There is no playbook or one-size-fits-all approach&mdash;every organization is different.&nbsp; Our experts thrive in disruption&mdash;delivering passion and more intelligent solutions&mdash;on-time and world-wide.</p>
                     </div>
                     <div class="col medium-6">
@@ -63,12 +63,12 @@
                 </div>
                 <div class="brands">
                     <h3>Our partners:</h3>
-                    <img src="images/layout/brands/iata.jpg" alt="IATA" class="non-fluid" />
-                    <img src="images/layout/brands/cns.jpg" alt="CNS" class="non-fluid" />
-                    <img src="images/layout/brands/nvocc.jpg" alt="N.V.O.C.C." class="non-fluid" />
-                    <img src="images/layout/brands/ctpat.jpg" alt="C-TPAT" class="non-fluid" />
-                    <img src="images/layout/brands/tapa.jpg" alt="TAPA" class="non-fluid" />
-                    <img src="images/layout/brands/wca.jpg" alt="WCA" class="non-fluid" />
+                    <img src="images/layout/brands/leoprds.png" alt="IATA" class="non-fluid" />
+                    <img src="images/layout/brands/tcs.png" alt="CNS" class="non-fluid" />
+                    <img src="images/layout/brands/Bollore_Logistics_Logo.png" alt="N.V.O.C.C." class="non-fluid" />
+                    <img src="images/layout/brands/raziq.png" alt="C-TPAT" class="non-fluid" />
+                    <img src="images/layout/brands/dhl.png" alt="TAPA" class="non-fluid" />
+                    <img src="images/layout/brands/fedex.png" alt="WCA" class="non-fluid" />
                 </div>
             </div> <!-- //.top-section -->
             <div class="services">

@@ -6032,7 +6032,7 @@ article.blog time {
 .backToTop:active,
 .backToTop:focus {
     color: #fff;
-    background: #923133
+    background: #d6193a
 }
 
 noscript {
@@ -6344,7 +6344,7 @@ h6,
     margin-bottom: 1rem;
     display: block;
     text-rendering: optimizeLegibility;
-    color: #923133;
+    color: #d6193a;
     font-weight: 700
 }
 
@@ -6430,7 +6430,7 @@ h6,
 }
 
 a {
-    color: #923133;
+    color: #d6193a;
     text-decoration: none;
     transition: color .2s ease-in-out
 }
@@ -6438,7 +6438,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-    color: #923133;
+    color: #d6193a;
     text-decoration: underline
 }
 
@@ -6452,7 +6452,7 @@ a[href$=".pdf"] {
 
 a[href$=".pdf"]:hover,
 a[href$=".pdf"]:focus {
-    color: #923133
+    color: #d6193a
 }
 
 a[href^=tel] {
@@ -6489,7 +6489,7 @@ ul.styled-list li:before,
 main ul li:before {
     text-indent: -1.5625rem;
     font-size: .9375rem;
-    color: #923133
+    color: #d6193a
 }
 
 ul.styled-list li:not(:first-child),
@@ -6717,7 +6717,7 @@ strong {
 }
 
 .btn {
-    background: #923133;
+    background: #324f91;
     border: none;
     border-radius: .375rem;
     color: #fff;
@@ -6748,7 +6748,7 @@ strong {
     display: inline-block;
     width: 3.625rem;
     height: 100%;
-    background: #7a2022;
+    background: #063294;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8182,7 +8182,7 @@ body.debug:before {
 
     .header .top-container .contacts a:hover,
     .header .top-container .contacts a:focus {
-        color: #923133;
+        color: #d6193a;
         text-decoration: underline
     }
 
@@ -8476,7 +8476,7 @@ main .colored-list .listHeadline {
     display: block;
     background: #e6e6e6;
     padding: 1.375rem 3.3125rem;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-size: 1.1875rem
 }
@@ -8524,11 +8524,13 @@ main .brands {
 main .brands h3 {
     display: block;
     width: 100%;
-    padding: 0 1.125rem
+    padding: 0 1.125rem;
+    font-size: 35px;
 }
 
 main .brands img {
-    max-width: 6.875rem
+    max-width: 6.875rem;
+    width: 164px !important;
 }
 
 @media (min-width: 40em) {
@@ -8713,7 +8715,7 @@ main .teasers .teaser a:not(.btn):focus {
 
 main .teasers .teaser a:not(.btn):hover .circle,
 main .teasers .teaser a:not(.btn):focus .circle {
-    color: #923133;
+    color: #d6193a;
     background: #fff;
     border-color: #000
 }
@@ -8787,7 +8789,7 @@ main .teasers .teaser:last-child a:not(.btn) {
 
 main .teasers .teaser:last-child a:not(.btn):hover,
 main .teasers .teaser:last-child a:not(.btn):focus {
-    color: #923133
+    color: #d6193a
 }
 
 main .teasers .teaser:last-child .teaserHeadline {
@@ -8871,7 +8873,7 @@ main .on-time .headline {
     font-family: "Lato", sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
-    color: #923133;
+    color: #d6193a;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     word-spacing: 2.2px;
@@ -9114,7 +9116,7 @@ main .social .col div:last-of-type {
 }
 
 main .social .headline {
-    color: #923133;
+    color: #d6193a;
     font-size: 1.25rem;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -9336,7 +9338,7 @@ main .checkboxes .col label.error:before {
 .contact-index main .headline,
 .where-we-are main .headline {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -9384,7 +9386,7 @@ main .checkboxes .col label.error:before {
 .zh-contact main .headline,
 .zh-where-we-are main .headline {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -9408,7 +9410,7 @@ main .text-col {
 
 .track-shipments main .headline-s {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.1875rem;
@@ -9446,7 +9448,7 @@ main .hr+.hr:before {
 
 main .headline-sub {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.0625rem;
@@ -9467,7 +9469,7 @@ main .subLinks {
 
 main .date {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     margin-bottom: 1.5rem
@@ -9617,7 +9619,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 
 .footer .headline {
     display: block;
-    color: #923133;
+    color: #d6193a;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -9721,7 +9723,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 }
 
 .header .top-container div.languageNavigation ul li a:hover {
-    color: #923133;
+    color: #d6193a;
     text-decoration: none
 }
 
@@ -9775,7 +9777,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 }
 
 .languageSwitchMobile div.languageNavigation ul li a:hover {
-    color: #923133;
+    color: #d6193a;
     text-decoration: none
 }
 
@@ -9826,7 +9828,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 .unstyled-list.fullwidth a {
     display: flex;
     justify-content: flex-start;
-    color: #923133;
+    color: #d6193a;
     font-weight: bold
 }
 
@@ -9854,7 +9856,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 .unstyled-list.customList li {
     display: flex;
     justify-content: flex-start;
-    color: #923133;
+    color: #d6193a;
     font-weight: bold
 }
 
@@ -9894,12 +9896,12 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
     justify-content: space-between;
     flex-flow: row wrap;
     font-weight: bold;
-    color: #923133
+    color: #d6193a
 }
 
 .unstyled-list.marketList li a {
     font-weight: bold;
-    color: #923133
+    color: #d6193a
 }
 
 .unstyled-list.marketList li a i {
@@ -9932,7 +9934,7 @@ body.zh-resources-market-information .cusBox li.row {
 
 body.resources-market-information .cusBox li a,
 body.zh-resources-market-information .cusBox li a {
-    color: #923133;
+    color: #d6193a;
     font-weight: bold
 }
 
@@ -10021,7 +10023,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         display: block;
-        width: 1px;
+        width: 0px;
         height: 1000px;
         max-height: 100%;
         overflow: hidden;
@@ -10041,7 +10043,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
 }
 
 .cusCol a {
-    color: #923133;
+    color: #d6193a;
     font-weight: bold
 }
 
@@ -10057,7 +10059,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
     max-width: fit-content;
     display: block;
     font-weight: bold;
-    color: #923133;
+    color: #d6193a;
     font-size: 1.2em
 }
 
@@ -10075,7 +10077,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
     width: 100%;
     display: block;
     font-weight: bold;
-    color: #923133;
+    color: #d6193a;
     font-size: 18px;
     text-align: right
 }
@@ -10090,7 +10092,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
 
 .newsList.subPage i {
     font-family: "FontAwesome";
-    color: #923133;
+    color: #d6193a;
     font-weight: bold;
     font-style: normal;
     display: inline-block;
@@ -10107,7 +10109,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
 .newsList.subPage div.blogOverviewItem i,
 .newsList.subPage .col.readMore i {
     font-family: "FontAwesome";
-    color: #923133;
+    color: #d6193a;
     font-weight: bold;
     font-style: normal;
     display: inline-block;
@@ -10117,7 +10119,7 @@ body.zh-resources-market-information .cusBox li span .keyword:last-child:after {
 body.blog-index .row.newsList i,
 body.zh-blog-index .row.newsList i {
     font-family: "FontAwesome";
-    color: #923133;
+    color: #d6193a;
     font-weight: bold;
     font-style: normal;
     display: inline-block;
@@ -10133,7 +10135,7 @@ body.zh-blog-index div.blogOverviewItem {
 
 body.blog .hr,
 body.zh-blog .hr {
-    background-color: #923133;
+    background-color: #d6193a;
     height: 1px;
     width: 100%;
     margin: 1.5rem 0 3rem
@@ -10350,7 +10352,7 @@ form.default [type="radio"] {
 
 form.default button,
 form.default [type="submit"] {
-    background: #923133;
+    background: #324f91;
     border: none;
     border-radius: .375rem;
     color: #fff;
@@ -10385,7 +10387,7 @@ form.default [type="submit"]:before {
     display: inline-block;
     width: 3.625rem;
     height: 100%;
-    background: #7a2022;
+    background: #063294;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10461,4 +10463,242 @@ img[name=vimg]+#newsletter-info[name=imgverify] {
 /*# sourceMappingURL=styles.css.map */
 .branding img{
     width: 160px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.track_form_main{
+    width: 50%;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+
+
+/* Start Shipment Tracking Status*/
+#bar-progress {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#bar-progress .step {
+    display: inline-block;
+}
+
+#bar-progress .step .number-container {
+    display: inline-block;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffcb05;
+    
+}
+
+#bar-progress .step.step-active .number-container {
+    background-color: #27aa80;
+}
+
+#bar-progress .step .number-container .number {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.75em;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+#bar-progress .step.step-active .number-container .number {
+    color: white;
+}
+
+#bar-progress .step h5 {
+    display: inline;
+    font-weight: 100;
+    font-size: .8em;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+#bar-progress .seperator {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ffcb05;
+    margin: auto 20px;
+}
+
+/* End Shipment Tracking Status*/
+
+
+
+/* Start Shipment Tracking Details*/
+.tracking-detail {
+ padding:3rem 0
+}
+#tracking {
+ margin-bottom:1rem
+}
+[class*=tracking-status-] p {
+ margin:0;
+ font-size:1.1rem;
+ color:#fff;
+ text-transform:uppercase;
+ text-align:center
+}
+[class*=tracking-status-] {
+ padding:1.6rem 0
+}
+.tracking-status-intransit {
+ background-color:#65aee0
+}
+.tracking-status-outfordelivery {
+ background-color:#f5a551
+}
+.tracking-status-deliveryoffice {
+ background-color:#f7dc6f
+}
+.tracking-status-delivered {
+ background-color:#4cbb87
+}
+.tracking-status-attemptfail {
+ background-color:#b789c7
+}
+.tracking-status-error,.tracking-status-exception {
+ background-color:#d26759
+}
+.tracking-status-expired {
+ background-color:#616e7d
+}
+.tracking-status-pending {
+ background-color:#ccc
+}
+.tracking-status-inforeceived {
+ background-color:#214977
+}
+.tracking-list {
+ /*border:1px solid #e5e5e5*/
+}
+.tracking-item {
+ border-left:2px solid #ffcb05;
+ position:relative;
+ padding:2rem 1.5rem .5rem 2.5rem;
+ font-size:.9rem;
+ margin-left:3rem;
+ min-height:5rem
+}
+.tracking-item:last-child {
+ padding-bottom:4rem
+}
+.tracking-item .tracking-date {
+ margin-bottom:.5rem;
+ font-weight: 500;
+}
+.tracking-item .tracking-date span {
+ color:#888;
+ font-size:85%;
+ padding-left:.4rem
+}
+.tracking-item .tracking-content {
+ padding:.5rem .8rem;
+ background-color:#f4f4f4;
+ border-radius:.5rem
+}
+.tracking-item .tracking-content span {
+ display:block;
+ color:#888;
+ font-size:85%
+}
+.tracking-item .tracking-icon {
+ line-height:2.6rem;
+ position:absolute;
+ left:-1.5rem;
+ width:2.6rem;
+ height:2.6rem;
+ text-align:center;
+ border-radius:50%;
+ font-size:1.1rem;
+ background-color:#fff;
+ color:#fff
+}
+.tracking-item .tracking-icon.status-sponsored {
+ background-color:#f68
+}
+.tracking-item .tracking-icon.status-delivered {
+ background-color:#4cbb87
+}
+.tracking-item .tracking-icon.status-outfordelivery {
+ background-color:#ffcb05
+}
+.tracking-item .tracking-icon.status-deliveryoffice {
+ background-color:#f7dc6f
+}
+.tracking-item .tracking-icon.status-attemptfail {
+ background-color:#b789c7
+}
+.tracking-item .tracking-icon.status-exception {
+ background-color:#d26759
+}
+.tracking-item .tracking-icon.status-inforeceived {
+ background-color:#214977
+}
+.tracking-item .tracking-icon.status-intransit {
+ color:#e5e5e5;
+ border:2px solid #ffcb05;
+ font-size:.6rem;
+ background: #ffffff;
+}
+@media(min-width:992px) {
+.track_form_main{
+    width: 50%;
+}
+ .tracking-item {
+  margin-left:30rem
+ }
+ .tracking-item .tracking-date {
+    position: absolute;
+    left: -21rem;
+    width: 20rem;
+    text-align: left;
+    font-weight: 600;
+ }
+ .tracking-item .tracking-date span {
+  display:block
+ }
+ .tracking-item .tracking-content {
+  padding:0;
+  background-color:transparent;
+ }
+}
+
+/* End Shipment Tracking Details*/
+
+@media only screen and (max-width: 600px) {
+    #bar-progress{
+        display: none;
+    }
+    .track_form_main{
+        width: 100%;
+    }
+    .track_submit{
+        width: 25% !important;
+    }
 }
