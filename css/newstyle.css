@@ -6693,7 +6693,7 @@ table tr {
 
 table th,
 table td {
-    padding: 1.125rem;
+    padding: 8px;
     display: table-cell;
     vertical-align: top
 }
@@ -10464,59 +10464,38 @@ img[name=vimg]+#newsletter-info[name=imgverify] {
 .branding img{
     width: 160px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.track_form_main{
-    width: 50%;
+.col-md-12{
+    width: 100%;
 }
-.table-borderless > tbody > tr > td,
-.table-borderless > tbody > tr > th,
-.table-borderless > tfoot > tr > td,
-.table-borderless > tfoot > tr > th,
-.table-borderless > thead > tr > td,
-.table-borderless > thead > tr > th {
-    border: none;
+.dilivery_number{
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(to right, #d6193a , #324f91);
+    color: #fff;
 }
+.dilivery_number p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
 
-
-
-/* Start Shipment Tracking Status*/
+}
 #bar-progress {
     width: 100%;
     display: inline-flex;
     justify-content: center;
 }
-
 #bar-progress .step {
     display: inline-block;
 }
-
 #bar-progress .step .number-container {
     display: inline-block;
     border: solid 1px #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: #ffcb05;
-    
+    background-color: #324f91;
 }
-
-#bar-progress .step.step-active .number-container {
-    background-color: #27aa80;
-}
-
 #bar-progress .step .number-container .number {
     font-weight: 700;
     font-size: 1em;
@@ -10525,180 +10504,120 @@ img[name=vimg]+#newsletter-info[name=imgverify] {
     text-align: center;
     color: #fff;
 }
-
-#bar-progress .step.step-active .number-container .number {
-    color: white;
-}
-
-#bar-progress .step h5 {
-    display: inline;
-    font-weight: 100;
-    font-size: .8em;
-    margin-left: 10px;
-    text-transform: uppercase;
-}
-
 #bar-progress .seperator {
     display: block;
     width: 50px;
     height: 2px;
-    background-color: #ffcb05;
+    background-color: #324f91;
     margin: auto 20px;
 }
-
-/* End Shipment Tracking Status*/
-
-
-
-/* Start Shipment Tracking Details*/
-.tracking-detail {
- padding:3rem 0
+.table_track .table_heading{
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(to right, #d6193a , #324f91);
+    color: #fff;
 }
-#tracking {
- margin-bottom:1rem
+.table .table {
+    background-color: #fff;
 }
-[class*=tracking-status-] p {
- margin:0;
- font-size:1.1rem;
- color:#fff;
- text-transform:uppercase;
- text-align:center
+.table .table {
+    background-color: #fff;
 }
-[class*=tracking-status-] {
- padding:1.6rem 0
+.table-bordered {
+    border: 1px solid #ddd;
 }
-.tracking-status-intransit {
- background-color:#65aee0
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
-.tracking-status-outfordelivery {
- background-color:#f5a551
+.table-bordered {
+    border: 1px solid #ddd;
 }
-.tracking-status-deliveryoffice {
- background-color:#f7dc6f
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
-.tracking-status-delivered {
- background-color:#4cbb87
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
 }
-.tracking-status-attemptfail {
- background-color:#b789c7
-}
-.tracking-status-error,.tracking-status-exception {
- background-color:#d26759
-}
-.tracking-status-expired {
- background-color:#616e7d
-}
-.tracking-status-pending {
- background-color:#ccc
-}
-.tracking-status-inforeceived {
- background-color:#214977
-}
-.tracking-list {
- /*border:1px solid #e5e5e5*/
-}
-.tracking-item {
- border-left:2px solid #ffcb05;
- position:relative;
- padding:2rem 1.5rem .5rem 2.5rem;
- font-size:.9rem;
- margin-left:3rem;
- min-height:5rem
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
 }
 .tracking-item:last-child {
- padding-bottom:4rem
+    padding-bottom: 4rem;
 }
-.tracking-item .tracking-date {
- margin-bottom:.5rem;
- font-weight: 500;
-}
-.tracking-item .tracking-date span {
- color:#888;
- font-size:85%;
- padding-left:.4rem
-}
-.tracking-item .tracking-content {
- padding:.5rem .8rem;
- background-color:#f4f4f4;
- border-radius:.5rem
-}
-.tracking-item .tracking-content span {
- display:block;
- color:#888;
- font-size:85%
-}
-.tracking-item .tracking-icon {
- line-height:2.6rem;
- position:absolute;
- left:-1.5rem;
- width:2.6rem;
- height:2.6rem;
- text-align:center;
- border-radius:50%;
- font-size:1.1rem;
- background-color:#fff;
- color:#fff
-}
-.tracking-item .tracking-icon.status-sponsored {
- background-color:#f68
-}
-.tracking-item .tracking-icon.status-delivered {
- background-color:#4cbb87
+
+.tracking-item {
+    border-left: 2px solid #224291;
+    position: relative;
+    padding: 2rem 1.5rem 0.5rem 2.5rem;
+    font-size: .9rem;
+    margin-left: 3rem;
+    min-height: 5rem;
 }
 .tracking-item .tracking-icon.status-outfordelivery {
- background-color:#ffcb05
+    background-color: #224291;
 }
-.tracking-item .tracking-icon.status-deliveryoffice {
- background-color:#f7dc6f
-}
-.tracking-item .tracking-icon.status-attemptfail {
- background-color:#b789c7
-}
-.tracking-item .tracking-icon.status-exception {
- background-color:#d26759
-}
-.tracking-item .tracking-icon.status-inforeceived {
- background-color:#214977
-}
-.tracking-item .tracking-icon.status-intransit {
- color:#e5e5e5;
- border:2px solid #ffcb05;
- font-size:.6rem;
- background: #ffffff;
-}
-@media(min-width:992px) {
-.track_form_main{
-    width: 50%;
-}
- .tracking-item {
-  margin-left:30rem
- }
- .tracking-item .tracking-date {
+.tracking-item .tracking-icon {
+    line-height: 2.6rem;
     position: absolute;
-    left: -21rem;
+    left: -1.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #fff;
+}
+@media (min-width: 992px){
+.tracking-item .tracking-date {
+    position: absolute;
+    left: -13rem;
     width: 20rem;
     text-align: left;
     font-weight: 600;
- }
- .tracking-item .tracking-date span {
-  display:block
- }
- .tracking-item .tracking-content {
-  padding:0;
-  background-color:transparent;
- }
 }
-
-/* End Shipment Tracking Details*/
-
-@media only screen and (max-width: 600px) {
-    #bar-progress{
-        display: none;
-    }
-    .track_form_main{
-        width: 100%;
-    }
-    .track_submit{
-        width: 25% !important;
-    }
+.tracking-item .tracking-date span {
+    display: block;
+}
+.tracking-item .tracking-content {
+    padding: 0;
+    background-color: transparent;
+}
+.tracking-item {
+    margin-left: 15rem;
+}
+}
+.tracking-item .tracking-date {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.tracking-item .tracking-date span {
+    color: #888;
+    font-size: 85%;
+    padding-left: 0.4rem;
+}
+.tracking-item .tracking-content {
+    padding: 0.5rem 0.8rem;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+}
+.tracking-item .tracking-icon.status-intransit {
+    color: #e5e5e5;
+    border: 2px solid #224291;
+    font-size: .6rem;
+    background: #ffffff;
+}
+.track_error{
+    padding: 16px;
+    background-color: #d6193a;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
 }
