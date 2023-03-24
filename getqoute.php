@@ -63,7 +63,7 @@
             </div>
         </div>
            
-    <form class="default" method="POST" action="#">
+    <form class="default" method="POST" action="getqoute.php">
         <div class="row">
             <div class="col medium-6">
                 <fieldset>

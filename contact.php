@@ -1,3 +1,51 @@
+<?php
+    include 'db_connect.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'PHPMailer-master/src/Exception.php';
+    require 'PHPMailer-master/src/PHPMailer.php';
+    require 'PHPMailer-master/src/SMTP.php';
+
+    if (isset($_POST['submit'])) {
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $title = $_POST['title'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+        $privacypolicy = $_POST['privacypolicy'];
+
+        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$title', '$email', '$phone', '$message', '$privacypolicy')";
+        $result = mysqli_query($conn, $sql);
+
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'saadkhawaja045@gmail.com';
+        $mail->Password = 'nhyuojivefnuikoy'; 
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+        //Recipients
+        $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
+        $mail->addaddress($email);     // Add a recipient 
+        $mail->addreplyto('saadkhawaja045@gmail.com');
+
+        $mail->isHTML(true);
+        $mail->Subject = 'Get Qoute' ;
+        $mailContent = '<h4 style="display:inline-block;">Name : </h4> '. $firstname . " " . $lastname . '<br>
+        <h4 style="display:inline-block;">title : </h4>   ' . $title .'   <br> 
+        <h4 style="display:inline-block;">email : </h4>   ' . $email .'   <br> 
+        <h4 style="display:inline-block;">number : </h4>   ' . $phone .'<br>  
+        <h4 style="display:inline-block;">message : </h4>   ' . $message .' <br>';
+        $mail->Body    = $mailContent;
+        $mail->send();
+        header("Location: contact.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <?php include 'home-header.php'?>
@@ -20,50 +68,52 @@
                 </div>
             </div>
            
-      <form class="default" data-ajax="false" data-validate="true" id="Kontaktformular1" method="post" action="formmail.php" enctype="multipart/form-data" novalidate="novalidate" data-zi-mapped-form="">
-                <input type="hidden" name="recipients" value="info@apexglobe.com">
-             <input type="hidden" name="good_url" value="/contact/contact-thankyou.html">   
-      <input type="hidden" name="bad_url" value="/contact/contact-formfailure.html">  
+        <form class="default" data-ajax="false" data-validate="true" id="Kontaktformular1" method="post" action="contact.php" enctype="multipart/form-data" novalidate="novalidate" data-zi-mapped-form="">
+            <input type="hidden" name="recipients" value="info@apexglobe.com">
+            <input type="hidden" name="good_url" value="/contact/contact-thankyou.html">   
+            <input type="hidden" name="bad_url" value="/contact/contact-formfailure.html">  
         
-        
-        
-        <div class="row">
-                    <div class="col medium-6">
-                        <fieldset>
-                            <label for="First-name">First name <small>(required)</small></label>
-                            <input type="text" id="First-name" name="First-name" required="" placeholder="First Name" data-msg-required="Please enter your First name" aria-required="true">
-                            <label for="Last-name">Last name <small>(required)</small></label>
-                            <input type="text" id="Last-name" name="Last-name" required="" placeholder="Last Name" data-msg-required="Please enter your Last name" aria-required="true">
-                            <label for="Title">Title</label>
-                          <input type="text" id="Title" name="Title">
-                            <label for="Email">Business Email <small>(required)</small></label>
-                            <input type="email" id="Email" name="Email" required="" placeholder="Business Email" data-msg-email="The email address is invalid" data-msg-required="Please enter a valid email address" data-rule-email="true" aria-required="true">
+            <div class="row">
+                <div class="col medium-6">
+                    <fieldset>
+                        <label for="First-name">First name <small>(required)</small></label>
+                        <input type="text" id="First-name" name="firstname" required="" placeholder="First Name" data-msg-required="Please enter your First name" aria-required="true">
 
-                            <label for="Phone"> Business Phone </label>
-                            <input type="tel" id="Phone" name="Phone" placeholder="Business Phone number">
-                        </fieldset>
-                    </div>
-                    <div class="col medium-6">
-                        <fieldset>
-                            <label for="Message">How can we support your business goals? <small>(required)</small></label>
-                            <textarea id="Message" name="Message" rows="10" cols="10" required="" placeholder="Message" data-msg-required="Please leave a message" aria-required="true"></textarea>
+                        <label for="Last-name">Last name <small>(required)</small></label>
+                        <input type="text" id="Last-name" name="lastname" required="" placeholder="Last Name" data-msg-required="Please enter your Last name" aria-required="true">
 
-                            <label for="privacy-policy">
-                                I have read and agree to the <a href="../privacy-policy.html" target="_blank" title="Privacy Policy | Apex Logistics">privacy policy</a>.
-                                <small>(required)</small>
-                            </label>
-                            <input type="checkbox" id="privacy-policy" name="privacy-policy" value="accept" data-msg-required="please agree to privacy-policy" required="" aria-required="true">
+                        <label for="Title">Title</label>
+                        <input type="text" id="Title" name="title">
 
+                        <label for="Email">Business Email <small>(required)</small></label>
+                        <input type="email" id="Email" name="email" required="" placeholder="Business Email" data-msg-email="The email address is invalid" data-msg-required="Please enter a valid email address" data-rule-email="true" aria-required="true">
 
-                            <button type="submit" name="Submit" class="button">Submit</button>
-                        </fieldset>
-                    </div>
-
-                    <div class="col">
-                        <hr>
-                    </div>
+                        <label for="Phone"> Business Phone </label>
+                        <input type="tel" id="Phone" name="phone" placeholder="Business Phone number">
+                    </fieldset>
                 </div>
-            </form>
+
+                <div class="col medium-6">
+                    <fieldset>
+                        <label for="Message">How can we support your business goals? <small>(required)</small></label>
+                        <textarea id="Message" name="message" rows="10" cols="10" required placeholder="Message" data-msg-required="Please leave a message" aria-required="true"></textarea>
+
+                        <label for="privacy-policy">
+                            I have read and agree to the <a href="../privacy-policy.html" target="_blank" title="Privacy Policy | Apex Logistics">privacy policy</a>.
+                            <small>(required)</small>
+                        </label>
+                        <input type="checkbox" id="privacy-policy" name="privacypolicy" value="accept" data-msg-required="please agree to privacy-policy" required aria-required="true">
+
+
+                        <button type="submit" name="submit" class="button">Submit</button>
+                    </fieldset>
+                </div>
+
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+        </form>
 
             <div class="row"> <strong> With a presence in 70 countries across six continents, 42 offices, 2,500+ dedicated employees, and consistent, dependable services, Apex continues to grow rapidly and deliver passion worldwide.</strong></div>
 
