@@ -30,7 +30,7 @@
         $mail->Port = 465;
         //Recipients
         $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
-        $mail->addaddress($email);     // Add a recipient 
+        $mail->addaddress('abubakar19417malik@gmail.com');     // Add a recipient 
         $mail->addreplyto('saadkhawaja045@gmail.com');
 
         $mail->isHTML(true);
