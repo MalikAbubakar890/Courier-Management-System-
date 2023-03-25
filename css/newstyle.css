@@ -5750,7 +5750,8 @@ article.blog time {
     position: relative;
     width: 100%;
     height: 18.75rem;
-    overflow: hidden
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 50em) {
@@ -7235,7 +7236,7 @@ body.debug:before {
 
 @media (min-width: 75em) {
     .page-navi .navi-main li {
-        padding: 0 .625rem
+        padding: 0 3.625rem;
     }
 
     .page-navi .navi-main li:first-child {
@@ -8402,7 +8403,7 @@ main {
 
 @media (min-width: 50em) {
     main {
-        padding-top: 5.8125rem
+        padding-top: 0;
     }
 }
 
@@ -10462,7 +10463,7 @@ img[name=vimg]+#newsletter-info[name=imgverify] {
 
 /*# sourceMappingURL=styles.css.map */
 .branding img{
-    width: 160px !important;
+    width: 86px !important;
 }
 .col-md-12{
     width: 100%;
@@ -10565,9 +10566,9 @@ tr {
 .tracking-item .tracking-icon {
     line-height: 2.6rem;
     position: absolute;
-    left: -1.5rem;
-    width: 2.6rem;
-    height: 2.6rem;
+    left: -16px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     border-radius: 50%;
     font-size: 1.1rem;
@@ -10621,3 +10622,8 @@ tr {
     font-weight: bolder;
     text-align: center;
 }
+
+
+
+
+
