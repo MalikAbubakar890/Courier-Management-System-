@@ -11,11 +11,10 @@
     if (isset($_POST['submit'])) {
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
-        $title = $_POST['title'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
-        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$title', '$email', '$phone', '$message', '$privacypolicy')";
+        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$email', '$phone', '$message', '$privacypolicy')";
         $result = mysqli_query($conn, $sql);
 
         $mail = new PHPMailer;
@@ -34,7 +33,6 @@
         $mail->isHTML(true);
         $mail->Subject = 'Get Qoute' ;
         $mailContent = '<h4 style="display:inline-block;">Name : </h4> '. $firstname . " " . $lastname . '<br>
-        <h4 style="display:inline-block;">title : </h4>   ' . $title .'   <br> 
         <h4 style="display:inline-block;">email : </h4>   ' . $email .'   <br> 
         <h4 style="display:inline-block;">number : </h4>   ' . $phone .'<br>  
         <h4 style="display:inline-block;">message : </h4>   ' . $message .' <br>';
@@ -79,14 +77,10 @@
 
                         <label for="Last-name">Last name <small>(required)</small></label>
                         <input type="text" id="Last-name" name="lastname" required="" placeholder="Last Name" data-msg-required="Please enter your Last name" aria-required="true">
-
-                        <label for="Title">Title</label>
-                        <input type="text" id="Title" name="title">
-
-                        <label for="Email">Business Email <small>(required)</small></label>
+                        <label for="Email">Email <small>(required)</small></label>
                         <input type="email" id="Email" name="email" required="" placeholder="Business Email" data-msg-email="The email address is invalid" data-msg-required="Please enter a valid email address" data-rule-email="true" aria-required="true">
 
-                        <label for="Phone"> Business Phone </label>
+                        <label for="Phone">Phone <small>(required)</small></label>
                         <input type="tel" id="Phone" name="phone" placeholder="Business Phone number">
                     </fieldset>
                 </div>

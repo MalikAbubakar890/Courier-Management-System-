@@ -232,10 +232,35 @@ $trackid = $_POST['track_id'];
 
 }
                } else {
-                echo "<div class='track_error'>Record Not Found</div>";
+                ?>
+                <div class='toast'>Record Not Found</div>
+                   <?php
              }
              }
              else{
                 echo "<div class='track_error'>Record Not Found</div>";
              }
 ?>
+<style type="text/css">
+  
+.toast {
+    width: 200px;
+    height: 20px;
+    height: auto;
+    position: absolute;
+    right: -218px;
+    z-index: 1;
+    margin-left: -100px;
+    bottom: 714px;
+    background-color: #35bc7a;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+</style>

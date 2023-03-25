@@ -67,13 +67,13 @@
         <div class="row">
             <div class="col medium-6">
                 <fieldset>
-                    <label for="origin">Origin</label>
+                    <label for="origin">Origin <small>(required)</small></label>
                     <input type="text" name="origin" class="form-control" required>
-                    <label for="destination">Destination</label>
-                    <input type="text" name="destination" class="form-control">
-                    <label>Weight (KG)</label>
+                    <label for="destination">Destination <small>(required)</small></label>
+                    <input type="text" name="destination" class="form-control" required>
+                    <label>Weight (KG) <small>(required)</small></label>
                     <input type="text" name="weight" placeholder="Enter Your Parcel Weight" class="form-control" required>
-                    <label>Date</label>
+                    <label>Date <small>(required)</small></label>
                     <input type="date" name="date" placeholder="Enter Departure Date" class="form-control" required>
                     <button type="submit" name="submit" class="button">Submit</button>
                 </fieldset>
