@@ -15,8 +15,6 @@
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
-        $privacypolicy = $_POST['privacypolicy'];
-
         $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$title', '$email', '$phone', '$message', '$privacypolicy')";
         $result = mysqli_query($conn, $sql);
 
@@ -97,13 +95,6 @@
                     <fieldset>
                         <label for="Message">How can we support your business goals? <small>(required)</small></label>
                         <textarea id="Message" name="message" rows="10" cols="10" required placeholder="Message" data-msg-required="Please leave a message" aria-required="true"></textarea>
-
-                        <label for="privacy-policy">
-                            I have read and agree to the <a href="../privacy-policy.html" target="_blank" title="Privacy Policy | Apex Logistics">privacy policy</a>.
-                            <small>(required)</small>
-                        </label>
-                        <input type="checkbox" id="privacy-policy" name="privacypolicy" value="accept" data-msg-required="please agree to privacy-policy" required aria-required="true">
-
 
                         <button type="submit" name="submit" class="button">Submit</button>
                     </fieldset>
