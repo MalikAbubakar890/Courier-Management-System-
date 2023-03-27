@@ -30,16 +30,42 @@
         $mail->Port = 465;
         //Recipients
         $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
-        $mail->addaddress($email);     // Add a recipient 
+        $mail->addaddress('saadkhawaja045@gmail.com');     // Add a recipient 
         $mail->addreplyto('saadkhawaja045@gmail.com');
 
         $mail->isHTML(true);
         $mail->Subject = 'Get Qoute' ;
-        $mailContent = '<h4 style="display:inline-block;">Name : </h4> '. $firstname . " " . $lastname . '<br>
-        <h4 style="display:inline-block;">title : </h4>   ' . $title .'   <br> 
-        <h4 style="display:inline-block;">email : </h4>   ' . $email .'   <br> 
-        <h4 style="display:inline-block;">number : </h4>   ' . $phone .'<br>  
-        <h4 style="display:inline-block;">message : </h4>   ' . $message .' <br>';
+        $mailContent =
+        '<div class="container">
+            <div class="card card-primary rounded-0">
+                <div class="card-body">
+                    <table class="table table-striped" border="0" cellspacing="0" cellpadding="15px">
+                        <tbody> 
+                            <tr>
+                                <td><strong>Name</strong></td>
+                                <td>'. $firstname . " " . $lastname . '</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Email<strong></td>
+                                <td>' . $email .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phone</strong></td>
+                                <td>' . $phone .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Title</strong></td>
+                                <td>' . $title .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Message</strong></td>
+                                <td>' . $message .'</td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>';
         $mail->Body    = $mailContent;
         $mail->send();
         header("Location: contact.php");
