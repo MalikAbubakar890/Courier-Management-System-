@@ -33,7 +33,7 @@
             <div class="row">
               <div class="col-sm-6 form-group ">
                 <label for="" class="control-label">Branch</label>
-                <select name="branch_id" id="" class="form-control input-sm select2">
+                <select name="branch_id" id="" class="form-control input-sm">
                   <option value=""></option>
                   <?php
                     $branches = $conn->query("SELECT *,concat(street,', ',city,', ',state,', ',zip_code,', ',country) as address FROM branches");

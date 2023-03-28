@@ -80,7 +80,6 @@ Class Action {
 		}else{
 			$save = $this->db->query("UPDATE users set $data where id = $id");
 		}
-
 		if($save){
 			return 1;
 		}

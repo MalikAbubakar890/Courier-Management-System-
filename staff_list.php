@@ -28,8 +28,12 @@
 				<tbody>
 					<?php
 					$i = 1;
-					$query="SELECT u.*,concat(u.firstname,', ',u.lastname) as name,concat(b.street,', ',b.city,', ',b.state,', ',b.zip_code,', ',b.country) as baddress FROM users u inner join branches b on b.id = u.branch_id where u.type = 2 order by concat(u.firstname,' ',u.lastname) asc";
-         					 while ($row = mysqli_fetch_array($query)) {
+					// $query="SELECT u.*,concat(u.firstname,', ',u.lastname) as name,concat(b.street,', ',b.city,', ',b.state,', ',b.zip_code,', ',b.country) as baddress FROM users u inner join branches b on b.id = u.branch_id where u.type = 2 order by concat(u.firstname,' ',u.lastname) asc";
+					$query = "SELECT * From users";
+					$result = mysqli_query($conn,$query);
+					print_r($result);exit;
+         					 while ($row = mysqli_fetch_array($result)) {
+					
 					?>
 					<tr>
 						<td class="text-center"><?php echo $i++ ?></td>
