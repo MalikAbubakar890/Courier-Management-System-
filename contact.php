@@ -29,8 +29,8 @@
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         //Recipients
-        $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
-        $mail->addaddress('saadkhawaja045@gmail.com');     // Add a recipient 
+        $mail->setfrom($email, $firstname);
+        $mail->addaddress('info@apexlogistics.com');     // Add a recipient 
         $mail->addreplyto($email);
 
         $mail->isHTML(true);
