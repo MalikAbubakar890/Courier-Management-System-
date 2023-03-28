@@ -11,10 +11,13 @@
     if (isset($_POST['submit'])) {
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
+        $title = $_POST['title'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
-        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$email', '$phone', '$message', '$privacypolicy')";
+        $privacypolicy = $_POST['privacypolicy'];
+
+        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$title', '$email', '$phone', '$message', '$privacypolicy')";
         $result = mysqli_query($conn, $sql);
 
         $mail = new PHPMailer;
@@ -26,16 +29,46 @@
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         //Recipients
-        $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
-        $mail->addaddress('abubakar19417malik@gmail.com');     // Add a recipient 
-        $mail->addreplyto('saadkhawaja045@gmail.com');
+        $mail->setfrom($email, $firstname);
+        $mail->addaddress('info@apexlogistics.com');     // Add a recipient 
+        $mail->addreplyto($email);
 
         $mail->isHTML(true);
         $mail->Subject = 'Get Qoute' ;
-        $mailContent = '<h4 style="display:inline-block;">Name : </h4> '. $firstname . " " . $lastname . '<br>
-        <h4 style="display:inline-block;">email : </h4>   ' . $email .'   <br> 
-        <h4 style="display:inline-block;">number : </h4>   ' . $phone .'<br>  
-        <h4 style="display:inline-block;">message : </h4>   ' . $message .' <br>';
+        $mailContent =
+        '<div class="container">
+            <div class="card card-primary rounded-0">
+                <div class="card-body">
+                    <table class="table" border="1" cellspacing="0" cellpadding="15px" style="background-color:#f5f5f5;">
+                        <thead>
+                            <th class="text-center" colspan="2"><h2>Apex Logistics</h2></th>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <td><strong>Name</strong></td>
+                                <td>'. $firstname . " " . $lastname . '</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Email<strong></td>
+                                <td>' . $email .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phone</strong></td>
+                                <td>' . $phone .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Title</strong></td>
+                                <td>' . $title .'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Message</strong></td>
+                                <td>' . $message .'</td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>';
         $mail->Body    = $mailContent;
         $mail->send();
         header("Location: contact.php");
@@ -77,10 +110,14 @@
 
                         <label for="Last-name">Last name <small>(required)</small></label>
                         <input type="text" id="Last-name" name="lastname" required="" placeholder="Last Name" data-msg-required="Please enter your Last name" aria-required="true">
-                        <label for="Email">Email <small>(required)</small></label>
+
+                        <label for="Title">Title</label>
+                        <input type="text" id="Title" name="title">
+
+                        <label for="Email">Business Email <small>(required)</small></label>
                         <input type="email" id="Email" name="email" required="" placeholder="Business Email" data-msg-email="The email address is invalid" data-msg-required="Please enter a valid email address" data-rule-email="true" aria-required="true">
 
-                        <label for="Phone">Phone <small>(required)</small></label>
+                        <label for="Phone"> Business Phone </label>
                         <input type="tel" id="Phone" name="phone" placeholder="Business Phone number">
                     </fieldset>
                 </div>
@@ -89,6 +126,13 @@
                     <fieldset>
                         <label for="Message">How can we support your business goals? <small>(required)</small></label>
                         <textarea id="Message" name="message" rows="10" cols="10" required placeholder="Message" data-msg-required="Please leave a message" aria-required="true"></textarea>
+
+                        <label for="privacy-policy">
+                            I have read and agree to the <a href="../privacy-policy.html" target="_blank" title="Privacy Policy | Apex Logistics">privacy policy</a>.
+                            <small>(required)</small>
+                        </label>
+                        <input type="checkbox" id="privacy-policy" name="privacypolicy" value="accept" data-msg-required="please agree to privacy-policy" required aria-required="true">
+
 
                         <button type="submit" name="submit" class="button">Submit</button>
                     </fieldset>
