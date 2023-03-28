@@ -67,40 +67,14 @@
         <div class="row">
             <div class="col medium-6">
                 <fieldset>
-                    <label for="origin">Origin</label>
-                    <select class="form-control" name="origin" required>
-                        <option>Select Your Origin</option>
-                        <?php 
-                        $records = mysqli_query($conn ,'SELECT * from cities_pk') or die("Query fail: " . mysqli_error());
-
-                                foreach ($records as $row) {   
-                                ?>
-                               <option><?php echo $row['name'];?></option>
-                              <?php
-                          }
-                        ?>
-                    </select>
-
-                    <label for="destination">Destination</label>
-                    <select class="form-control" name="destination" required>
-                        <option>Select Your Origin</option>
-                        <?php 
-                    $records = mysqli_query($conn ,'SELECT * from cities_pk') or die("Query fail: " . mysqli_error());
-
-                                foreach ($records as $row) {   
-                                ?>
-                               <option><?php echo $row['name'];?></option>
-                              <?php
-                          }
-                        ?>
-                    </select>
-
-                    <label>Weight (KG)</label>
-                    <input type="number" name="weight" placeholder="Enter Your Parcel Weight" class="form-control" required>
-                    
-                    <label>Date</label>
+                    <label for="origin">Origin <small>(required)</small></label>
+                    <input type="text" name="origin" class="form-control" required>
+                    <label for="destination">Destination <small>(required)</small></label>
+                    <input type="text" name="destination" class="form-control" required>
+                    <label>Weight (KG) <small>(required)</small></label>
+                    <input type="text" name="weight" placeholder="Enter Your Parcel Weight" class="form-control" required>
+                    <label>Date <small>(required)</small></label>
                     <input type="date" name="date" placeholder="Enter Departure Date" class="form-control" required>
-                    
                     <button type="submit" name="submit" class="button">Submit</button>
                 </fieldset>
             </div>
