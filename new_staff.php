@@ -34,12 +34,12 @@
               <div class="col-sm-6 form-group ">
                 <label for="" class="control-label">Branch</label>
                 <select name="branch_id" id="" class="form-control input-sm">
-                  <option value=""></option>
+                  <option value="">Select branch</option>
                   <?php
                     $branches = $conn->query("SELECT *,concat(street,', ',city,', ',state,', ',zip_code,', ',country) as address FROM branches");
                     while($row = $branches->fetch_assoc()):
                   ?>
-                  <option value="<?php if(isset($row)){ echo $row['branch_name']; }?>"><?php if(isset($row)){ echo $row['branch_name']; }?></option>
+                  <option value="<?php if(isset($row)){ echo $row['id']; }?>"><?php if(isset($row)){ echo $row['branch_name']; }?></option>
                 <?php endwhile; ?>
                 </select>
               </div>

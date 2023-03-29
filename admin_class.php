@@ -71,6 +71,7 @@ Class Action {
 
 		}
 		$check = $this->db->query("SELECT * FROM users where email ='$email' ".(!empty($id) ? " and id != {$id} " : ''))->num_rows;
+		// echo$check;exit;
 		if($check > 0){
 			return 2;
 			exit;
@@ -80,6 +81,7 @@ Class Action {
 		}else{
 			$save = $this->db->query("UPDATE users set $data where id = $id");
 		}
+
 		if($save){
 			return 1;
 		}

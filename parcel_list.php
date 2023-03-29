@@ -33,15 +33,16 @@
 					if(isset($_GET['s'])){
 						$where = " where status = {$_GET['s']} ";
 					}
-					if($_SESSION['login_type'] != 1 ){
+					if($_SESSION['login_type'] != 2 ){
 						if(empty($where))
 							$where = " where ";
 						else
 							$where .= " and ";
 						$where .= " (from_branch_id = {$_SESSION['login_branch_id']} or to_branch_id = {$_SESSION['login_branch_id']}) ";
 					}
-					$qry = $conn->query("SELECT * from parcels $where Group By traking_number order by  unix_timestamp(date_created) desc ");
-					while($row= $qry->fetch_assoc()):
+					$qry = "SELECT * from parcels $where Group By traking_number order by  unix_timestamp(date_created) desc ";
+					$query = mysqli_query($conn,$qry);
+					while ($row = mysqli_fetch_assoc($query)) :
 					?>
 					<tr>
 						<td class="text-center"><?php echo $i++ ?></td>

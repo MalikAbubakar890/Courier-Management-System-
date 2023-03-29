@@ -64,7 +64,7 @@
                 <div class="brands">
                     <h3>Our partners:</h3>
                     <img src="images/layout/brands/leoprds.png" alt="IATA" class="non-fluid" />
-                    <img src="images/layout/brands/tcs.png" alt="CNS" class="non-fluid" />
+                    <img src="images/layout/brands/ups.png" alt="CNS" class="non-fluid" />
                     <img src="images/layout/brands/Bollore_Logistics_Logo.png" alt="N.V.O.C.C." class="non-fluid" />
                     <img src="images/layout/brands/raziq.png" alt="C-TPAT" class="non-fluid" />
                     <img src="images/layout/brands/dhl.png" alt="TAPA" class="non-fluid" />

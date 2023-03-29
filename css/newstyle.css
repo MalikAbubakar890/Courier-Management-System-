@@ -8531,7 +8531,7 @@ main .brands h3 {
 
 main .brands img {
     max-width: 6.875rem;
-    width: 164px !important;
+    width: 100px !important;
 }
 
 @media (min-width: 40em) {
