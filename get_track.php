@@ -5,7 +5,7 @@ if (isset($_POST['track_id'])) {
 $trackid = $_POST['track_id'];
 
 
-    $query = "SELECT * From parcels Where traking_number = $trackid";
+    $query = "SELECT * From parcels Where traking_number = '".$trackid."'";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
@@ -72,7 +72,7 @@ $trackid = $_POST['track_id'];
                               Signed for by :</b>
                            </td>
                            <td class="we_font_size">
-                              &nbsp;( '.$row["recipient_name"].'  - STAFF )                                                   
+                              &nbsp;( '.$row["recipient_name"].' )                                                   
                            </td>
                            <td class="we_font_size"><b>Dated:</b></td>
                            <td class="we_font_size"> '.$row["date_created"].'</td>
@@ -101,8 +101,8 @@ $trackid = $_POST['track_id'];
                            <td class="we_font_size"> '.$row["recipient_name"].'</td>
                         </tr>
                         <tr>
-                           <td class="we_font_size"><b>Reference No. :</b></td>
-                           <td class="we_font_size"> '.$row["reference_number"].'</td>
+                           <td class="we_font_size"><b>Consignment No. :</b></td>
+                           <td class="we_font_size"> '.$row["traking_number"].'</td>
                            <td class="we_font_size"><b>Parcel Status :</b></td>
                            <td class="we_font_size"> '.$row["status_field"].'</td>
                         </tr>
@@ -110,7 +110,7 @@ $trackid = $_POST['track_id'];
                            <td class="we_font_size"><b>Pieces :</b></td>
                            <td class="we_font_size"> '.$row["quantity"].'</td>
                            <td class="we_font_size"><b>Weight : </b></td>
-                           <td class="we_font_size"> '.$row["weight"].' Gram(s)</td>
+                           <td class="we_font_size"> '.$row["weight"].'</td>
                         </tr>
                      </tbody>
                   </table>
@@ -133,7 +133,7 @@ $trackid = $_POST['track_id'];
                                        <!-- <i class="fas fa-shipping-fast"></i> -->
                                     </div>
                                     <div class="tracking-date">13 March, 2023<span>(17:59)</span></div>
-                                    <div class="tracking-content">Delivered to <br>&nbsp;(  '.$row["recipient_name"].'  - STAFF )</div>
+                                    <div class="tracking-content">Delivered to <br>&nbsp;(  '.$row["recipient_name"].')</div>
                                  </div>
                               </div>
                               <div class="tracking-list">
@@ -244,14 +244,14 @@ $trackid = $_POST['track_id'];
 <style type="text/css">
   
 .toast {
-    width: 200px;
+    width: 515px;
     height: 20px;
     height: auto;
     position: absolute;
-    right: -218px;
+    right: 345px;
     z-index: 1;
-    margin-left: -100px;
-    bottom: 714px;
+    margin-left: -55px;
+    bottom: 183px;
     background-color: #35bc7a;
     color: #F0F0F0;
     font-family: Calibri;

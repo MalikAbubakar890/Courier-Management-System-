@@ -139,9 +139,9 @@
         <table class="table table-striped" id="parcel-items">
           <thead>
             <tr>
-              <th>Weight</th>
-              <th>Height</th>
-              <th>Length</th>
+              <th>Weight (KG)</th>
+              <th>Height (Inches)</th>
+              <th>Length (CM)</th>
               <th>Width</th>
               <th>Price</th>
               <?php if(!isset($id)): ?>

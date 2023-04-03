@@ -21,7 +21,7 @@
                             </blockquote>
                         </div><!-- //.claim -->
                         <ul class="buttons">
-                            <li><a href="track-courier.php" title="Track Shipments | Apex Logistics" class="btn">Track Parcel</a></li>
+                            <li><a href="track-courier.php" title="Track Shipments | Apex Logistics" class="btn">Track Shipment</a></li>
                             <li><a href="who-we-are/company.html" title="International Shipping, Logistics, & Warehousing" class="btn">Learn More</a></li>
                         </ul>
                     </div>
@@ -169,14 +169,17 @@
                 <div class="col medium-9">
                     <div class="social-icons">
                         <a href="https://www.facebook.com/ApexLogistics1" title="Visit us on Facebook"><img src="images/layout/Facebook.jpg" class="social-icon" alt="Visit us on Facebook" /></a>
-                        <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn"><img src="images/layout/LinkedIn.jpg" class="social-icon" alt="Visit us on LinkedIn" /></a>
+                       <!--  <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn"><img src="images/layout/LinkedIn.jpg" class="social-icon" alt="Visit us on LinkedIn" /></a> -->
                         <a href="https://twitter.com/ApexLogistics_1" title="Visit us on Twitter"><img src="images/layout/Twitter.png" class="social-icon" alt="Visit us on Twitter" /></a>
-                        <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram"><img src="images/layout/ig.png" class="social-icon" alt="Visit us on Instagram" /></a>
+                        <!-- <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram"><img src="images/layout/ig.png" class="social-icon" alt="Visit us on Instagram" /></a> -->
 
                     </div>
                     <div>
                         <p class="headline">Connect with Apex Logistics</p>
-                        <p>Stay connected on <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram">Instagram</a>, <a href="https://www.facebook.com/ApexLogistics1" title="Visit us on Facebook">Facebook</a>, <a href="https://twitter.com/ApexLogistics_1" title="Visit us on Twitter">Twitter</a>, <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn">LinkedIn</a> or for industry news and Apex updates.</p>
+                       <!--  <p>Stay connected on <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram">Instagram</a>,  -->
+                            <a href="https://www.facebook.com/ApexLogistics1" title="Visit us on Facebook">Facebook</a>, <a href="https://twitter.com/ApexLogistics_1" title="Visit us on Twitter">Twitter</a>, 
+                            <!-- <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn">LinkedIn</a> -->
+                             or for industry news and Apex updates.</p>
                     </div>
                 </div>
             </div><!-- //.social -->
@@ -185,7 +188,7 @@
                     <div class="col medium-5 giant-6">
                         <p class="headline-s">Go Further with Global Presence</p>
                         <p>At Apex, our mission to provide unparalleled quality, value, and growth span 70 countries worldwide. Our experts understand the essential services supply chain companies provide global and local economies and communities. We find value in learning the individual nuances, unique challenges, and specific practices of every customer to unleash results that ignite passion. </p>
-                        <a href="who-we-are/company.html" class="btn" title="Learn how we help">Learn how we help</a>
+                        <!-- <a href="who-we-are/company.html" class="btn" title="Learn how we help">Learn how we help</a> -->
                     </div>
                 </div>
             </div>

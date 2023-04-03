@@ -1,4 +1,56 @@
-<?php
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <?php include 'home-header.php'?>
+
+
+    <style type="text/css">
+        .toast {
+            width: 515px;
+            height: 20px;
+            height: auto;
+            /*position: absolute;*/
+            right: 345px;
+            z-index: 1;
+            /*margin-left: -55px;*/
+            bottom: 183px;
+            background-color: #35bc7a;
+            color: #F0F0F0;
+            font-family: Calibri;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 7px;
+            -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+            -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+            box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+        }
+    </style>
+
+  <body class=" index browserunknown win  nojs lang-en">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+    <input type="checkbox" id="navi-toggled">
+    
+       <?php include 'headtwo.php';?>
+        <main class="content clearfix">
+
+            <div class="row">
+                <div class="col">
+                    <h1>Contact Us</h1>
+    
+                </div>
+            </div>
+           
+        <form class="default" data-ajax="false" data-validate="true" id="Kontaktformular1" method="post" action="contact.php" enctype="multipart/form-data" novalidate="novalidate" data-zi-mapped-form="">
+            <input type="hidden" name="recipients" value="info@apexglobe.com">
+            <input type="hidden" name="good_url" value="/contact/contact-thankyou.html">   
+            <input type="hidden" name="bad_url" value="/contact/contact-formfailure.html">  
+        <?php
     include 'db_connect.php';
 
     use PHPMailer\PHPMailer\PHPMailer;
@@ -11,13 +63,11 @@
     if (isset($_POST['submit'])) {
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
-        $title = $_POST['title'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
-        $privacypolicy = $_POST['privacypolicy'];
 
-        $sql = "INSERT INTO contact_us (id, first_name, last_name, title, email, phone, message, privacypolicy) VALUES (NULL, '$firstname', '$lastname', '$title', '$email', '$phone', '$message', '$privacypolicy')";
+        $sql = "INSERT INTO contact_us (id, first_name, last_name, email, phone, message) VALUES (NULL, '$firstname', '$lastname', '$email', '$phone', '$message')";
         $result = mysqli_query($conn, $sql);
 
         $mail = new PHPMailer;
@@ -57,10 +107,6 @@
                                 <td>' . $phone .'</td>
                             </tr>
                             <tr>
-                                <td><strong>Title</strong></td>
-                                <td>' . $title .'</td>
-                            </tr>
-                            <tr>
                                 <td><strong>Message</strong></td>
                                 <td>' . $message .'</td>
                             </tr>   
@@ -71,37 +117,17 @@
         </div>';
         $mail->Body    = $mailContent;
         $mail->send();
-        header("Location: contact.php");
-    }
-?>
+        // header("Location: contact.php");
+    ?>
+    <div class="toast">
+        Contact From Submitted Successfully
+    </div>
+    <?php
 
-<!DOCTYPE html>
-<html lang="en">
-  <?php include 'home-header.php'?>
-
-  <body class=" index browserunknown win  nojs lang-en">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
-    <input type="checkbox" id="navi-toggled">
-    
-       <?php include 'headtwo.php';?>
-        <main class="content clearfix">
-
-            <div class="row">
-                <div class="col">
-                    <h1>Contact Us</h1>
-    
-                </div>
-            </div>
-           
-        <form class="default" data-ajax="false" data-validate="true" id="Kontaktformular1" method="post" action="contact.php" enctype="multipart/form-data" novalidate="novalidate" data-zi-mapped-form="">
-            <input type="hidden" name="recipients" value="info@apexglobe.com">
-            <input type="hidden" name="good_url" value="/contact/contact-thankyou.html">   
-            <input type="hidden" name="bad_url" value="/contact/contact-formfailure.html">  
-        
+     }else{
+        echo "";
+     }
+     ?>
             <div class="row">
                 <div class="col medium-6">
                     <fieldset>
@@ -110,14 +136,10 @@
 
                         <label for="Last-name">Last name <small>(required)</small></label>
                         <input type="text" id="Last-name" name="lastname" required="" placeholder="Last Name" data-msg-required="Please enter your Last name" aria-required="true">
-
-                        <label for="Title">Title</label>
-                        <input type="text" id="Title" name="title">
-
-                        <label for="Email">Business Email <small>(required)</small></label>
+                        <label for="Email">Email <small>(required)</small></label>
                         <input type="email" id="Email" name="email" required="" placeholder="Business Email" data-msg-email="The email address is invalid" data-msg-required="Please enter a valid email address" data-rule-email="true" aria-required="true">
 
-                        <label for="Phone"> Business Phone </label>
+                        <label for="Phone">Phone <small>(required)</small></label>
                         <input type="tel" id="Phone" name="phone" placeholder="Business Phone number">
                     </fieldset>
                 </div>
@@ -126,14 +148,6 @@
                     <fieldset>
                         <label for="Message">How can we support your business goals? <small>(required)</small></label>
                         <textarea id="Message" name="message" rows="10" cols="10" required placeholder="Message" data-msg-required="Please leave a message" aria-required="true"></textarea>
-
-                        <label for="privacy-policy">
-                            I have read and agree to the <a href="../privacy-policy.html" target="_blank" title="Privacy Policy | Apex Logistics">privacy policy</a>.
-                            <small>(required)</small>
-                        </label>
-                        <input type="checkbox" id="privacy-policy" name="privacypolicy" value="accept" data-msg-required="please agree to privacy-policy" required aria-required="true">
-
-
                         <button type="submit" name="submit" class="button">Submit</button>
                     </fieldset>
                 </div>

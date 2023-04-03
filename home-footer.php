@@ -20,7 +20,7 @@
 
                         </div>
                         <div class="row small-middle medium-top contactbox">
-                            <div class="col small-6 "><a href="track-courier.php" class="btn" title="Track Shipments">Track Parcel</a></div>
+                            <div class="col small-6 "><a href="track-courier.php" class="btn" title="Track Shipments">Track Shipment</a></div>
                             <div class="col small-6  second-btn"><a href="getqoute.php" class="btn" title="Request a Quote">Request a Quote</a></div>
 
                         </div>
@@ -33,9 +33,8 @@
                     <div class="col">
 
                         <ul class="navi navi-add">
-                            <li class="news-updates"><a title="Latest News | Apex Logistics" href="blog/index.html" class="news-updates  ">News & Updates</a></li>
                             <li class="privacy-policy"><a title="Privacy Policy | Apex Logistics" href="privacy-policy.html" class="privacy-policy  ">Privacy Policy</a></li>
-                            <li class="downloads"><a title="Forms-Downloads" href="downloads.html" class="downloads">Forms-Downloads</a></li>
+                            <li class="downloads"><a title="Forms-Downloads" href="downloads.html" class="downloads">Term And Condition</a></li>
                         </ul>
                     </div>
                 </div>

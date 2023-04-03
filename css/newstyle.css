@@ -6632,7 +6632,7 @@ img {
     height: auto;
     max-width: 100%;
     width: 100%;
-    margin-bottom: 2em
+    /*margin-bottom: 2em*/
 }
 
 img[src^='http://cms.'] {
@@ -6749,7 +6749,7 @@ strong {
     display: inline-block;
     width: 3.625rem;
     height: 100%;
-    background: #063294;
+    background: #d41a38;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6791,7 +6791,7 @@ strong {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     line-height: 1.25em;
-    margin-bottom: 2.8125rem
+    margin-bottom: 3.8125rem;
 }
 
 @media (min-width: 75em) {
@@ -7236,7 +7236,7 @@ body.debug:before {
 
 @media (min-width: 75em) {
     .page-navi .navi-main li {
-        padding: 0 3.625rem;
+        padding: 0 1.625rem;
     }
 
     .page-navi .navi-main li:first-child {
@@ -8531,7 +8531,8 @@ main .brands h3 {
 
 main .brands img {
     max-width: 6.875rem;
-    width: 100px !important;
+    width: 133px !important;
+    height: 70px;
 }
 
 @media (min-width: 40em) {
@@ -9112,7 +9113,7 @@ main .social .col div:last-of-type {
 
 @media (min-width: 40em) {
     main .social .col div:last-of-type {
-        padding-left: 4.75rem
+        padding-left: 2.75rem
     }
 }
 
@@ -9134,7 +9135,7 @@ main .social .headline {
 main .social .social-icons {
     display: flex;
     justify-content: space-between;
-    min-width: 200px
+    min-width: 100px;
 }
 
 main .social .social-icons img.social-icon {
@@ -9652,7 +9653,7 @@ body.who-we-are-industry-verticals .col.medium-2 h2 {
 .footer .col-text {
     position: relative;
     padding-bottom: 1.625rem;
-    margin-bottom: 3.25rem
+    margin-bottom: 9.25rem
 }
 
 .footer .emails li {
@@ -10388,7 +10389,7 @@ form.default [type="submit"]:before {
     display: inline-block;
     width: 3.625rem;
     height: 100%;
-    background: #063294;
+    background: #d41a38;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10463,7 +10464,7 @@ img[name=vimg]+#newsletter-info[name=imgverify] {
 
 /*# sourceMappingURL=styles.css.map */
 .branding img{
-    width: 86px !important;
+    width: 100px !important;
 }
 .col-md-12{
     width: 100%;

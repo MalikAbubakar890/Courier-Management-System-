@@ -11,7 +11,7 @@
   </style>
   <aside class="main-sidebar sidebar-dark-warning elevation-4" style="background-color: #22aae2">
     <div class="dropdown" style="background-color: #22aae2">
-   	<a href="./" class="brand-link" style="background-color: #119ed8">
+   	<a href="dashboard.php" class="brand-link" style="background-color: #119ed8">
         <?php if($_SESSION['login_type'] == 1): ?>
           <img src="images/logo-light.png">
         <?php else: ?>

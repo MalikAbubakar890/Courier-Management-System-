@@ -1,5 +1,32 @@
 <?php include 'db_connect.php'; ?>
-    <?php
+   
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <?php include 'home-header.php'?>
+
+<body class=" index browserunknown win  nojs lang-en">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+    <input type="checkbox" id="navi-toggled">
+    
+    <?php include 'headtwo.php';?>
+    <main class="content clearfix">
+
+        <div class="row">
+            <div class="col">
+                <h1>Get a Qoute</h1>
+            </div>
+        </div>
+           
+    <form class="default" method="POST" action="getqoute.php">
+        <div class="row">
+            <div class="col medium-6">
+                 <?php
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
     
@@ -37,35 +64,17 @@
             <h4 style="display:inline-block;">date : </h4>   ' . $date .' <br>';
             $mail->Body    = $message;
             $mail->send();
-            header("Location: getqoute.php");
-        }
-    ?>
+            // header("Location: getqoute.php"); 
+                ?>
+                <div class="toast">
+                    From Submitted Successfully
+                </div>
+                <?php
 
-<!DOCTYPE html>
-<html lang="en">
-
-    <?php include 'home-header.php'?>
-
-<body class=" index browserunknown win  nojs lang-en">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-  
-    <input type="checkbox" id="navi-toggled">
-    
-    <?php include 'headtwo.php';?>
-    <main class="content clearfix">
-
-        <div class="row">
-            <div class="col">
-                <h1>Get a Qoute</h1>
-            </div>
-        </div>
-           
-    <form class="default" method="POST" action="getqoute.php">
-        <div class="row">
-            <div class="col medium-6">
+                 }else{
+                    echo "";
+                 }
+                 ?>
                 <fieldset>
                     <label for="origin">Origin <small>(required)</small></label>
                     <input type="text" name="origin" class="form-control" required>
@@ -171,7 +180,28 @@
        <?php include 'home-footer.php';?>
     </div>
   
-    
+    <style type="text/css">
+        .toast {
+    width: 515px;
+    height: 20px;
+    height: auto;
+    /*position: absolute;*/
+    right: 345px;
+    z-index: 1;
+    /*margin-left: -55px;*/
+    bottom: 183px;
+    background-color: #35bc7a;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+    </style>
 
 </body>
 </html>

@@ -16,10 +16,13 @@
          }
          @media (min-width: 75em){
             .slider-container #claim {
-                padding-top: 8.75rem;
+                padding-top: 3.75rem;
                 width: 32.1875rem;
                 max-width: 100%;
                 margin: auto;
+            }
+            .slider-container {
+                height: 18.0625rem;
             }
          }
          .slider-container .slider{
@@ -44,7 +47,7 @@
                                           <input type="text" id="track_no" name="track_id" placeholder="Track Parcel" class="form-control" required>
                                           <span class="throw_error"></span>
                                           <span id="success"></span>
-                                          <button class="submit" type="submit" name="submit" class="button">Track Parcel</button>
+                                          <button class="submit" type="submit" name="submit" class="button">Track Shipments</button>
                                        </fieldset>
                                     </form>
                                  </div>
@@ -60,9 +63,9 @@
                 </div> <!-- //.slider -->
             </div> <!-- //.slider-container -->
          <div class="row">
-            <div class="col">
-               <h1>Track Your Parcel</h1>
-            </div>
+            <!-- <div class="col">
+               <h1>Track Your Shipments</h1>
+            </div> -->
          </div>
          <div class="row hr">
             <div class="col-md-12 tracking_number" id="track_data" >

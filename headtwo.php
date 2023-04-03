@@ -52,7 +52,7 @@
                             </ul>
 
                             <ul class="buttons">
-                                <li><a href="track-courier.php" title="Track Parcel | Apex Logistics" class="btn">Track Parcel</a></li>
+                                <li><a href="track-courier.php" title="Track Parcel | Apex Logistics" class="btn">Track Shipment</a></li>
                                 <li class="quote"><a href="getqoute.php" title="Get a Quote | Apex Logistics" class="btn">Request a Quote</a></li>
                             </ul>
 
