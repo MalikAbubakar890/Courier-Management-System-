@@ -3,197 +3,638 @@
   <?php include 'home-header.php'?>
 
   <body class=" index browserunknown win  nojs lang-en">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
-    <input type="checkbox" id="navi-toggled">
-    
-       <?php include 'headtwo.php';?>
-            <div class="slider-container">
-                <div class="row">
-                    <div class="col">
-                        <div id="claim">
-                            <blockquote>
-                                <strong class="headline">On time. Every time. Everywhere.</strong>
-                                <p><strong>Let’s discover a smarter path to your customers — by ocean, air, or land — together.</strong> Since the start of the millennium, Apex Logistics has built lasting global partnerships on results, deep supply chain knowledge, and a powerful entrepreneurial approach that is anything but out-of-the-box.</p>
-                            </blockquote>
-                        </div><!-- //.claim -->
-                        <ul class="buttons">
-                            <li><a href="track-courier.php" title="Track Shipments | Apex Logistics" class="btn">Track Shipment</a></li>
-                            <li><a href="who-we-are/company.html" title="International Shipping, Logistics, & Warehousing" class="btn">Learn More</a></li>
-                        </ul>
+         <?php include 'headtwo.php';?>
+            <!-- banner start -->
+    <?php include 'head.php'?>
+    <!-- feature area start -->
+    <div class="container">
+        <div class="feature-area mb-60">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section-title mb-0">
+                        <h4 class="subtitle">FEATURES</h4>
+                        <h2 class="title">WHAT WE OFFER</h2>
                     </div>
                 </div>
-                <div class="slider">
-                    <div class="slide" id="first-slide"></div><!-- //.slide -->
-                    <div class="slide" id="second-slide"></div><!-- //.slide -->
-                    <div class="slide" id="third-slide"></div><!-- //.slide -->
-                    <div class="slide" id="fourth-slide"></div><!-- //.slide -->
-                </div> <!-- //.slider -->
-            </div> <!-- //.slider-container -->
-        <main class="content clearfix">
-
-            <div class="row top-section">
-                <div class="col">
-                    <h1><span>One of the Best </span>International Logistics Companies</h1>
-                </div>
-                <div class="row">
-                    <div class="col medium-6">
-
-                        <p><a href="javascript:void(0)" title="International Shipping, Logistics, &amp; Warehousing">Apex Logistics International, Inc.</a>&nbsp;taps into breakthrough technologies and powerful trade lanes so you can focus on your customers. Ship with confidence&mdash;tracking each freight journey from origin to customer from your convenient online portal.</p>
-                        <p>Since the start of the millennium, we&rsquo;ve built each partnership and strategy around unique client goal posts and business challenges. There is no playbook or one-size-fits-all approach&mdash;every organization is different.&nbsp; Our experts thrive in disruption&mdash;delivering passion and more intelligent solutions&mdash;on-time and world-wide.</p>
-                    </div>
-                    <div class="col medium-6">
-
-                        <div class="colored-list">
-                            <div><strong>The Apex Logistics difference:</strong></div>
-                        </div>
-                        <div class="colored-list">
-                            <ul>
-                                <li>Reach your customers everywhere, on-time, every time</li>
-                                <li>Rely on consistent results shaped by best practices and ISO standards</li>
-                                <li>Streamline freight shipments with one global logistics solutions partner</li>
-                                <li>Unleash greater value while driving the best possible outcomes</li>
-                                <li>Navigate disruption with a proven supply chain management partner</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="brands">
-                    <h3>Our partners:</h3>
-                    <img src="images/layout/brands/leoprds.png" alt="IATA" class="non-fluid" />
-                    <img src="images/layout/brands/ups.png" alt="CNS" class="non-fluid" />
-                    <img src="images/layout/brands/Bollore_Logistics_Logo.png" alt="N.V.O.C.C." class="non-fluid" />
-                    <img src="images/layout/brands/raziq.png" alt="C-TPAT" class="non-fluid" />
-                    <img src="images/layout/brands/dhl.png" alt="TAPA" class="non-fluid" />
-                    <img src="images/layout/brands/fedex.png" alt="WCA" class="non-fluid" />
-                </div>
-            </div> <!-- //.top-section -->
-            <div class="services">
-                <div class="row">
-                    <div class="col">
-                        <strong class="headline-services animate">Explore Our Services </strong>
-                        <div class="teasers">
-                            <div class="row">
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="what-we-do/transportation/air.html" class="teaser-content" title="Air Freight">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-plane" aria-hidden="true"></i>
-                                            <span>Air <span class="d-block">Freight</span></span></p>
-                                        <p>Reduce shipping times and costs with Apex group’s right-sized air freight solutions.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate bl br">
-                                    <a href="what-we-do/transportation/ocean.html" class="teaser-content" title="Ocean Freight">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-anchor" aria-hidden="true"></i>
-                                            <span>Ocean <span class="d-block">Freight</span></span></p>
-                                        <p>Accelerate shipping timeframes and maximize value while Apex manages your largest shipments.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="what-we-do/supply-chain/supply-chain-solutions.html" class="teaser-content" title="Global Supply Chain Management">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-cogs" aria-hidden="true"></i>
-                                            <span>Global Supply Chain Management</span></p>
-                                        <p>Unlock a competitive edge with objective insights and guidance from our experienced supply chain management consultants.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="what-we-do/warehousing-distribution/index.html" class="teaser-content" title="Warehousing and Distribution">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-sitemap" aria-hidden="true"></i>
-                                            <span>Warehousing and Distribution</span></p>
-                                        <p>Rest assured with Apex International managing products of every size with precision, security, and professional handling—every step of the way.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate bl br">
-                                    <a href="what-we-do/transportation/surface.html" class="teaser-content" title="Inland Trucking">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-truck" aria-hidden="true"></i>
-                                            <span>Inland <span class="d-block">Trucking</span></span></p>
-                                        <p>Tap into our vast trucking network for reliable inland transportation—anywhere.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="what-we-do/warehousing-distribution/e-commerce-solutions.html" class="teaser-content" title="e-Commerce Soultions ">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-desktop" aria-hidden="true"></i>
-                                            <span>Cross-Border <span class="d-block">E-Commerce</span></span></p>
-                                        <p>Meet compliance and consumer expectations with our end-to-end, global E-Commerce solutions.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="what-we-do/customs/customs-brokerage.html" class="teaser-content" title="Customs Brokerage">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-globe" aria-hidden="true"></i>
-                                            <span>Customs <span class="d-block">Brokerage</span></span></p>
-                                        <p>Eliminate unnecessary delays of your clearances with Apex’s trusted brokerage service.</p>
-                                    </a>
-                                </div>
-                                <div class="col small-6 medium-8 teaser animate bl-l">
-                                    <p class="teaserHeadline">
-                                        Deliver a Powerful Customer Experience</p>
-                                    <div class="teaser-content">
-                                        <p>Maintaining customer loyalty and momentum in an on-demand, delivery culture starts with the subject matter experts. Learn how we can support your international freight shipments and business goals.</p>
-                                        <a href="contact.php" title="Contact us" class="btn">Let’s Talk</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- //.teasers -->
-                    </div>
-                </div>
-            </div> <!-- //.services -->
-            <div class="on-time">
-                <div class="row">
-                    <div class="col">
-                        <p class="headline">Unleash global reach for faster deliveries worldwide</p>
-                    </div>
-                    <div class="col medium-7">
-                        <p>Leverage our expansive warehousing and distribution network including 41 branch offices around the globe. Each of our state-of-the-art facilities maintains rigorous quality assurance standards, running on high-performance inventory management technologies with current operating capabilities, and unmatched customer service.</p>
-                        <a href="contact/index.html" class="btn" title="View all locations">Explore our locations</a>
-                    </div>
-                </div>
-            </div><!-- //.on-time -->
-            <div class="track-delivery animate">
-                <div class="row">
-                    <div class="col medium-5">
-
-                        <p>At Apex International we believe in supply chain transparency and sparking lasting relationships built on trust. That’s why Apex is a proud member of WCA (World Cargo Alliance) and CTPAT (The Customs-Trade Partnership Against Terrorism). Our services are constantly shaped and refined in alignment with the latest ISO standards to deliver passion with integrity to every customer.</p>
-                    </div>
-                </div>
-            </div><!-- //.track-delivery -->
-            <div class="row medium-center social">
-                <div class="col medium-9">
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/ApexLogistics1" title="Visit us on Facebook"><img src="images/layout/Facebook.jpg" class="social-icon" alt="Visit us on Facebook" /></a>
-                       <!--  <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn"><img src="images/layout/LinkedIn.jpg" class="social-icon" alt="Visit us on LinkedIn" /></a> -->
-                        <a href="https://twitter.com/ApexLogistics_1" title="Visit us on Twitter"><img src="images/layout/Twitter.png" class="social-icon" alt="Visit us on Twitter" /></a>
-                        <!-- <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram"><img src="images/layout/ig.png" class="social-icon" alt="Visit us on Instagram" /></a> -->
-
-                    </div>
-                    <div>
-                        <p class="headline">Connect with Apex Logistics</p>
-                       <!--  <p>Stay connected on <a href="https://www.instagram.com/apexlogistics_international/" title="Visit us on Instagram">Instagram</a>,  -->
-                            <a href="https://www.facebook.com/ApexLogistics1" title="Visit us on Facebook">Facebook</a>, <a href="https://twitter.com/ApexLogistics_1" title="Visit us on Twitter">Twitter</a>, 
-                            <!-- <a href="https://www.linkedin.com/company/apex-logistics-international/" title="Visit us on LinkedIn">LinkedIn</a> -->
-                             or for industry news and Apex updates.</p>
-                    </div>
-                </div>
-            </div><!-- //.social -->
-            <div class="offices animate">
-                <div class="row">
-                    <div class="col medium-5 giant-6">
-                        <p class="headline-s">Go Further with Global Presence</p>
-                        <p>At Apex, our mission to provide unparalleled quality, value, and growth span 70 countries worldwide. Our experts understand the essential services supply chain companies provide global and local economies and communities. We find value in learning the individual nuances, unique challenges, and specific practices of every customer to unleash results that ignite passion. </p>
-                        <!-- <a href="who-we-are/company.html" class="btn" title="Learn how we help">Learn how we help</a> -->
+                <div class="col-lg-6 align-self-center">
+                    <div class="section-title">
+                        <p class="content left-line">Collaboratively customize front-end materials with standardized infomediaries. Holisticly engineer performance based value. Assertively benchmark turnkey web-readiness rather than long.</p>
                     </div>
                 </div>
             </div>
+            <div class="feature-slider owl-carousel">
+                <div class="item">
+                    <div class="feature-wrap bg-pink">
+                        <div class="icon">
+                            <img src="assetstwo/img/icon/feature-1.png" alt="img">
+                        </div>
+                        <h5>TRANSPARENT PRICING</h5>
+                        <p>Globally initiate resource maximizing total linkage via enabled process improvements.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="feature-wrap bg-ash">
+                        <div class="icon">
+                            <img src="assetstwo/img/icon/feature-2.png" alt="img">
+                        </div>
+                        <h5>ONLINE TRACKING</h5>
+                        <p>Globally initiate resource maximizing total linkage via enabled process improvements.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="feature-wrap bg-sky">
+                        <div class="icon">
+                            <img src="assetstwo/img/icon/feature-3.png" alt="img">
+                        </div>
+                        <h5>WAREHOUSE STORAGE</h5>
+                        <p>Globally initiate resource maximizing total linkage via enabled process improvements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature area end -->
 
-        </main><!-- //.content -->
+    <!-- about area start -->
+    <div class="about-area pd-bottom-120">
+        <div class="container">
+            <div class="about-area-inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-thumb-wrap">
+                            <img class="img-1" src="assetstwo/img/about/shape.png" alt="img">
+                            <img class="img-2" src="assetstwo/img/about/1.png" alt="img">
+                            <img class="img-3" src="assetstwo/img/about/2.png" alt="img">
+                            <div class="exprience-wrap">
+                                <img src="assetstwo/img/about/shape-3.png" alt="img">
+                                <div class="details">
+                                    <h1>22</h1>
+                                    <p>YEARS EXPERIENCE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <div class="about-inner-wrap">
+                            <div class="section-title mb-0">
+                                <h4 class="subtitle">ABOUT US</h4>
+                                <h2 class="title">WELCOME WORLD WIDE BEST TRANSPORT COMPANY</h2>
+                                <p class="content left-line">Competently implement efficient e-commerce without cross-unit growth strategies.</p>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-12 col-md-6">
+                                        <ul class="list-inner-wrap mb-mb-0 mb-3 mb-lg-3 mb-xl-0">
+                                            <li><img src="assetstwo/img/icon/check.png" alt="img"> Unlimited Revisions</li>
+                                            <li><img src="assetstwo/img/icon/check.png" alt="img">Best Fitness Excercise</li>
+                                            <li><img src="assetstwo/img/icon/check.png" alt="img">Combine Fitness and</li>
+                                            <li><img src="assetstwo/img/icon/check.png" alt="img">Best Solutions</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-md-6 align-self-center">
+                                        <div class="thumb"><img src="assetstwo/img/about/3.png" alt="img"></div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-base" href="about.html">ABOUT MORE</a>
+                                    <div class="author-wrap">
+                                        <div class="thumb"><img src="assetstwo/img/about/4.png" alt="img"></div>
+                                        <div class="details">
+                                            <img src="assetstwo/img/about/signature.png" alt="img">
+                                            <p>CEO, Of Company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about area end -->
+
+    <!-- service area start -->
+    <div class="service-area pd-top-115 pd-bottom-90 pb-lg-0" style="background: url(assetstwo/img/service/bg.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h4 class="subtitle style-2">SERVICES</h4>
+                        <h2 class="title">OUR SERVICE FOR YOU</h2>
+                        <p>Quickly optimize cooperative models for long-term high-impact ROI. Dynamically drive innovative e-commerce and distributed paradigms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service-wrap">
+                        <div class="thumb">
+                            <img src="assetstwo/img/service/1.png" alt="img">
+                            <div class="icon">
+                                <img src="assetstwo/img/service/service-icon-1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h5>SEA TRANSPORTATION</h5>
+                            <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
+                            <div class="btn-wrap">
+                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service-wrap">
+                        <div class="thumb">
+                            <img src="assetstwo/img/service/2.png" alt="img">
+                            <div class="icon">
+                                <img src="assetstwo/img/service/service-icon-2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h5>AIR TRANSPORTATION</h5>
+                            <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
+                            <div class="btn-wrap">
+                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service-wrap">
+                        <div class="thumb">
+                            <img src="assetstwo/img/service/3.png" alt="img">
+                            <div class="icon">
+                                <img src="assetstwo/img/service/service-icon-3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h5>WAREHOUSING</h5>
+                            <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
+                            <div class="btn-wrap">
+                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service area end -->
+
+    <!--wcu-area start-->
+    <div class="wcu-area bg-overlay" style="background: url(assetstwo/img/wcu/bg.png);">
+        <img class="img-1" src="assetstwo/img/wcu/1.png" alt="img">
+        <img class="img-2" src="assetstwo/img/wcu/2.png" alt="img">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-6 order-lg-2">
+                    <div class="video-thumb-wrap">
+                        <img src="assetstwo/img/wcu/video.png" alt="img">
+                        <a class="video-play-btn" href="https://www.youtube.com/embed/Wimkqo8gDZ0" data-effect="mfp-zoom-in"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 order-lg-1">
+                    <div class="section-title style-white mb-0">
+                        <h4 class="subtitle style-2">WHY CHOOSE US</h4>
+                        <h2 class="title">WHY CHOOSE FOR US</h2>
+                        <p class="content">Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
+                    </div>
+                    <div class="single-wcu-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/wcu/icon-1.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h6>FAST TRANSPORTION SERVICE</h6>
+                            <p>Enhance interactive metrics for reliable services. Proactively unleash fully researched.</p>
+                        </div>
+                    </div>
+                    <div class="single-wcu-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/wcu/icon-2.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h6>24/7 ONLINE SUPPORT</h6>
+                            <p>Enhance interactive metrics for reliable services. Proactively unleash fully researched.</p>
+                        </div>
+                    </div>
+                    <div class="single-wcu-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/wcu/icon-3.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h6>SAFETY AND RELIABILITY</h6>
+                            <p>Enhance interactive metrics for reliable services. Proactively unleash fully researched.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--wcu-area end-->
+
+    <!--fact-area start-->
+    <div class="container">
+        <div class="fact-counter-area" style="background: url(assetstwo/img/fact/bg.png);">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-fact-wrap">
+                        <h2><span class="counter">2000</span>+</h2>
+                        <h5>PROJECT COMPLETE</h5>
+                        <p>Conveniently impact front-end niches via maintainable.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-fact-wrap">
+                        <h2><span class="counter">100</span>+</h2>
+                        <h5>BEST EMPLOYEES</h5>
+                        <p>Conveniently impact front-end niches via maintainable.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-fact-wrap">
+                        <h2><span class="counter">450</span>+</h2>
+                        <h5>WORLDWIDE CLIENTS</h5>
+                        <p>Conveniently impact front-end niches via maintainable.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-fact-wrap after-none">
+                        <h2><span class="counter">80</span>+</h2>
+                        <h5>WORLD AWARDS</h5>
+                        <p>Conveniently impact front-end niches via maintainable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fact-area end-->
+
+    <!--team-area start-->
+    <div class="team-area pd-top-115">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h4 class="subtitle">TEAM MEMBERS</h4>
+                        <h2 class="title">OUR PROFESSIONAL TEAM</h2>
+                        <p>Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="team-slider owl-carousel">
+                        <div class="item">
+                            <div class="single-team-wrap">
+                                <div class="thumb">
+                                    <img src="assetstwo/img/team/1.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>MICHEL RICHARD</h5>
+                                    <p>Director & CEO</p>
+                                    <div class="hover-icon">
+                                        <i class="fa fa-plus"></i>
+                                        <ul class="social-area">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-team-wrap">
+                                <div class="thumb">
+                                    <img src="assetstwo/img/team/2.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>ANJELINA ROSEE</h5>
+                                    <p>Founder</p>
+                                    <div class="hover-icon">
+                                        <i class="fa fa-plus"></i>
+                                        <ul class="social-area">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-team-wrap">
+                                <div class="thumb">
+                                    <img src="assetstwo/img/team/3.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>MISHEL MARSH</h5>
+                                    <p>Co-Founder</p>
+                                    <div class="hover-icon">
+                                        <i class="fa fa-plus"></i>
+                                        <ul class="social-area">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--team-area end-->
+
+    <!--contact-area start-->
+    <div class="call-to-contact-area pd-top-240" style="background: #F9F9F9;">
+        <img src="assetstwo/img/contact/1.png" alt="img">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="cta-inner-wrap">
+                        <div class="section-title style-white mb-0">
+                            <h4 class="subtitle style-2">LET’S TALK</h4>
+                            <h2 class="title">YOU NEED ANY HELP? GET FREE CONSULTATION</h2>
+                        </div>
+                        <div class="single-cta-wrap">
+                            <div class="icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="details">
+                                <h6>Have Any Question</h6>
+                                <h3>+19524357106</h3>
+                            </div>
+                        </div>
+                        <a class="btn btn-base" href="contact.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contact-area end-->
+
+    <!-- testimonial area start -->
+    <div class="testimonial-area pd-top-115 pd-bottom-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center mb-0">
+                        <h4 class="subtitle">TESTIMONIALS</h4>
+                        <h2 class="title">OUR CLIENT’S FEEDBACK</h2>
+                        <p class="content">Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider owl-carousel">
+                <div class="item">
+                    <div class="single-testimonial-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/testimonial/quote.png" alt="img">
+                        </div>
+                        <p>“Progressively strategize intermandated manufactured products after multidisci plinary sources. Conveniently iterate value-added systems with.”</p>
+                        <div class="client-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/testimonial/1.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h5>ANJELINA MATHEUS</h5>
+                                <p>Co-Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-testimonial-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/testimonial/quote.png" alt="img">
+                        </div>
+                        <p>“Progressively strategize intermandated manufactured products after multidisci plinary sources. Conveniently iterate value-added systems with.”</p>
+                        <div class="client-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/testimonial/2.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h5>MONISH POUL</h5>
+                                <p>Co-Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-testimonial-wrap">
+                        <div class="icon">
+                            <img src="assetstwo/img/testimonial/quote.png" alt="img">
+                        </div>
+                        <p>“Progressively strategize intermandated manufactured products after multidisci plinary sources. Conveniently iterate value-added systems with.”</p>
+                        <div class="client-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/testimonial/3.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h5>MICHEL CLACRK</h5>
+                                <p>Co-Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial area end -->
+
+    <!-- portfolio area start -->
+    <div class="portfolio-area pd-top-115" style="background: url(assetstwo/img/portfolio/bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title style-white">
+                        <h4 class="subtitle style-2">OUR PORTFOLIO</h4>
+                        <h2 class="title">LET'S CHECK OUT OUR ALL PORTFOLIO</h2>
+                        <p class="content">Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce. Compellingly synthesize innovative leadership.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="single-portfolio-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/portfolio/1.png" alt="img">
+                            </div>
+                            <div class="portfolio-details">
+                                <div class="details">
+                                    <p>Logistics Transportation</p>
+                                    <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                                </div>
+                                <a href="#" class="icon">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-portfolio-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/portfolio/2.png" alt="img">
+                            </div>
+                            <div class="portfolio-details">
+                                <div class="details">
+                                    <p>Logistics Transportation</p>
+                                    <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                                </div>
+                                <a href="#" class="icon">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-portfolio-wrap">
+                            <div class="thumb">
+                                <img src="assetstwo/img/portfolio/3.png" alt="img">
+                            </div>
+                            <div class="portfolio-details">
+                                <div class="details">
+                                    <p>Logistics Transportation</p>
+                                    <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                                </div>
+                                <a href="#" class="icon">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev button"><img src="assetstwo/img/icon/left-arrow.png" alt="img"></div>
+                <div class="swiper-button-next button"><img src="assetstwo/img/icon/right-arrow.png" alt="img"></div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio area end -->
+
+    <!--blog-area start-->
+    <div class="blog-area pd-top-115 pt-lg-0">
+        <div class="container p-sm-0">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h4 class="subtitle">LATEST BLOG</h4>
+                        <h2 class="title">LATEST NEWS & ARTICLES</h2>
+                        <p class="content">Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner">
+                        <div class="thumb">
+                            <img src="assetstwo/img/blog/1.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">Express delivery is going to
+                                slow down in 2022</a></h4>
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
+                                <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
+                            </ul>
+                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner">
+                        <div class="thumb">
+                            <img src="assetstwo/img/blog/2.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">USA exhibition support for
+                                teneso NewYork.</a></h4>
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
+                                <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
+                            </ul>
+                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner">
+                        <div class="thumb">
+                            <img src="assetstwo/img/blog/3.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">New Additions to our great
+                                Metro trucks.</a></h4>
+                            <ul class="blog-meta">
+                                <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
+                                <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
+                            </ul>
+                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog-area end-->
+
+    <!--partner-area start-->
+    <div class="partner-area pd-top-90 pd-bottom-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h4 class="subtitle">HAPPY CLIENTS</h4>
+                        <h2 class="title">TRUSTED BY OUR 365,000 CLIENTS</h2>
+                        <p class="content">Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-slider owl-carousel">
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/1.png" alt="img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/2.png" alt="img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/3.png" alt="img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/4.png" alt="img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/5.png" alt="img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <img src="assetstwo/img/partner/6.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--partner-area end-->
+
        <?php include 'home-footer.php';?>
     </div>
   
