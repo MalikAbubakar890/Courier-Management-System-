@@ -1,63 +1,28 @@
- <div class="page-navi">
-        <div class="row">
-            <div class="col">
-                <nav>
-                    <!-- <div class="languageSwitchMobile">
-                        <div class="languageNavigation"><a class="btn" href="#!">Languages</a>
-                            <ul class="language-dropdown">
-                                <li class="en active"><a class="en active" title="International Shipping, Logistics, & Warehousing" href="index.html">English</a></li>
-                                <li class="zh "><a class="zh " title="International Shipping, Logistics, & Warehousing" href="zh/index.html">Chinese</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <ul class="navi navi-main">
-                        <li class="home mx-3"><a title="home" href="index.php" class="home">Home</a></li>
-                        <li class="aboutus mx-3"><a title="aboutus" href="aboutus.php" class="aboutus">About US</a></li>
-                        <li class="Contact mx-3"><a title="Contact" href="contact.php" class="Contact">Contact</a></li>
-
-
-                    </ul>
-
-
-                    <ul class="unstyled-list topLineContacts">
-                        <li>
-                            <a href="aboutus.php" title=""></a>
-                        </li>
-                        <li>
-                            <a href="contact.php" title=""></a>
-                        </li>
-                        <li>
-                            <a href="login.php" title="Track Shipments | Apex Logistics"></a>
-                        </li>
-                        <li>
-                            <a class="phone" href="tel:+923032740775" title="+923032740775"><i class="fa-default fa-phone"></i> <span>+923032740775</span></a> </li>
-                        <li><a href="index.html" class="escape email " title="Send mail" data-local="info" data-domain="apexlogistics.com"><i class="fa-default fa-paper-plane" aria-hidden="true"></i> <span>info@apexlogistics.com</span></a></li>
-                    </ul>
-                </nav>
+<header>
+        <nav id="navigation4" class="container navigation">
+            <div class="nav-header">
+                <a class="nav-brand" href=""> <img src="public/img/logos/logo.jpg" class="main-logo" alt="logo" id="main_logo"> </a>
+                <div class="nav-toggle"></div>
             </div>
-        </div>
-    </div> <!-- //.page-navi -->
-    <div class="page-wrap">
- <header class="header clearfix">
-            <div class="row">
-                <div class="col">
-                    <div class="top-container">
+            <div class="nav-menus-wrapper">
+                <ul class="nav-menu align-to-right">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus">About</a>
+                    </li>
+                    <li>
+                        <a href="services">Services</a>
+                    </li>
+                    <li>
+                        <a href="our-blogs">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contactus">Contact</a>
 
-                        <a href="index.php" title="Apex Logistics International Inc." class="branding"><img src="images/logo.png" alt="Apex Logistics International Inc. - Logo" class="non-fluid"></a>
-                        <div class="links">
-                            <ul class="unstyled-list contacts">
-                                <li><a href="index.html" class="escape email " title="Send mail" data-local="info" data-domain="apexglobe.com"><i class="fa-default fa-paper-plane" aria-hidden="true"></i> <span>info@apexglobe.com</span></a></li>
-                                <li>
-                                    <a class="phone" href="tel:18664565988" title="Nummer 001-866-456-5988 anrufen!"><i class="fa-default fa-phone"></i> <span>001-866-456-5988</span></a> </li>
-                            </ul>
-
-                            <ul class="buttons">
-                                <li><a href="track-courier.php" title="Track Parcel | Apex Logistics" class="btn">Track Shipment</a></li>
-                                <li class="quote"><a href="getqoute.php" title="Get a Quote | Apex Logistics" class="btn">Request a Quote</a></li>
-                            </ul>
-
-                        </div> <!-- //.contacts -->
-                    </div><!-- //.top-container -->
-                </div>
+                    </li>
+                </ul>
             </div>
-        </header><!-- //.header -->
+        </nav>
+    </header>
