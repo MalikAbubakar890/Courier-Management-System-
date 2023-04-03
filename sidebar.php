@@ -8,12 +8,19 @@
     [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link{
       color: white;
     }
+    .layout-fixed .main-sidebar{
+      margin-top: 60px;
+    }
   </style>
+
   <aside class="main-sidebar sidebar-dark-warning elevation-4" style="background-color: #22aae2">
     <div class="dropdown" style="background-color: #22aae2">
    	<a href="dashboard.php" class="brand-link" style="background-color: #119ed8">
         <?php if($_SESSION['login_type'] == 1): ?>
-          <img src="images/logo-light.png">
+         <div style=" background-color: white; padding: 20px; width: 150px; margin: auto; border-radius: 10px; " class="logo">
+           <img src="images/logo-light.png">
+         </div>
+          
         <?php else: ?>
         <h3 class="text-center p-0 m-0"><b>STAFF</b></h3>
         <?php endif; ?>
