@@ -4,8 +4,48 @@
 
   <body class=" index browserunknown win  nojs lang-en">
          <?php include 'headtwo.php';?>
-            <!-- banner start -->
-    <?php include 'head.php'?>
+        <!-- preloader area start -->
+    <!-- banner start -->
+    <div class="banner-area banner-area-1">
+        <div class="banner-slider owl-carousel">
+            <div class="item" style="background: url(assetstwo/img/banner/1.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-8">
+                            <div class="banner-inner style-white">
+                                <h1 class="b-animate-2 title">FAST CERTIFIED & BEST WORLD WIDE SERVICE
+                                </h1>
+                                <p class="b-animate-3 content">Professionally strategize stand-alone functionalities and cooperative total linkage. Objectively predominate virtual quality vectors with orthogonal.</p>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-base b-animate-4" href="track-courier.php"> Track Shipment</a>
+                                    <a class="btn btn-white b-animate-4" href="contact.php">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background: url(assetstwo/img/banner/2.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-8">
+                            <div class="banner-inner style-white">
+                                <h1 class="b-animate-2 title">FAST CERTIFIED & BEST WORLD WIDE SERVICE
+                                </h1>
+                                <p class="b-animate-3 content">Professionally strategize stand-alone functionalities and cooperative total linkage. Objectively predominate virtual quality vectors with orthogonal.</p>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-base b-animate-4" href="track-courier.php"> Track Shipment</a>
+                                    <a class="btn btn-white b-animate-4" href="contact.php">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
     <!-- feature area start -->
     <div class="container">
         <div class="feature-area mb-60">
@@ -94,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
-                                    <a class="btn btn-base" href="about.html">ABOUT MORE</a>
+                                    <a class="btn btn-base" href="aboutus.php">ABOUT MORE</a>
                                     <div class="author-wrap">
                                         <div class="thumb"><img src="assetstwo/img/about/4.png" alt="img"></div>
                                         <div class="details">
@@ -136,9 +176,6 @@
                         <div class="details">
                             <h5>SEA TRANSPORTATION</h5>
                             <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
-                            <div class="btn-wrap">
-                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,9 +190,6 @@
                         <div class="details">
                             <h5>AIR TRANSPORTATION</h5>
                             <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
-                            <div class="btn-wrap">
-                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,9 +204,6 @@
                         <div class="details">
                             <h5>WAREHOUSING</h5>
                             <p>Intrinsicly exploit e-business imperative with emerging human capital.</p>
-                            <div class="btn-wrap">
-                                <a class="read-more-text" href="service-details.html">READ MORE <span><i class="fa fa-arrow-right"></i></span></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,125 +263,6 @@
     </div>
     <!--wcu-area end-->
 
-    <!--fact-area start-->
-    <div class="container">
-        <div class="fact-counter-area" style="background: url(assetstwo/img/fact/bg.png);">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-fact-wrap">
-                        <h2><span class="counter">2000</span>+</h2>
-                        <h5>PROJECT COMPLETE</h5>
-                        <p>Conveniently impact front-end niches via maintainable.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-fact-wrap">
-                        <h2><span class="counter">100</span>+</h2>
-                        <h5>BEST EMPLOYEES</h5>
-                        <p>Conveniently impact front-end niches via maintainable.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-fact-wrap">
-                        <h2><span class="counter">450</span>+</h2>
-                        <h5>WORLDWIDE CLIENTS</h5>
-                        <p>Conveniently impact front-end niches via maintainable.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-fact-wrap after-none">
-                        <h2><span class="counter">80</span>+</h2>
-                        <h5>WORLD AWARDS</h5>
-                        <p>Conveniently impact front-end niches via maintainable.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--fact-area end-->
-
-    <!--team-area start-->
-    <div class="team-area pd-top-115">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center">
-                        <h4 class="subtitle">TEAM MEMBERS</h4>
-                        <h2 class="title">OUR PROFESSIONAL TEAM</h2>
-                        <p>Dramatically enhance interactive metrics for reliable services. Proactively unleash fully researched e-commerce.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="team-slider owl-carousel">
-                        <div class="item">
-                            <div class="single-team-wrap">
-                                <div class="thumb">
-                                    <img src="assetstwo/img/team/1.png" alt="img">
-                                </div>
-                                <div class="details">
-                                    <h5>MICHEL RICHARD</h5>
-                                    <p>Director & CEO</p>
-                                    <div class="hover-icon">
-                                        <i class="fa fa-plus"></i>
-                                        <ul class="social-area">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="single-team-wrap">
-                                <div class="thumb">
-                                    <img src="assetstwo/img/team/2.png" alt="img">
-                                </div>
-                                <div class="details">
-                                    <h5>ANJELINA ROSEE</h5>
-                                    <p>Founder</p>
-                                    <div class="hover-icon">
-                                        <i class="fa fa-plus"></i>
-                                        <ul class="social-area">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="single-team-wrap">
-                                <div class="thumb">
-                                    <img src="assetstwo/img/team/3.png" alt="img">
-                                </div>
-                                <div class="details">
-                                    <h5>MISHEL MARSH</h5>
-                                    <p>Co-Founder</p>
-                                    <div class="hover-icon">
-                                        <i class="fa fa-plus"></i>
-                                        <ul class="social-area">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--team-area end-->
-
     <!--contact-area start-->
     <div class="call-to-contact-area pd-top-240" style="background: #F9F9F9;">
         <img src="assetstwo/img/contact/1.png" alt="img">
@@ -368,10 +280,10 @@
                             </div>
                             <div class="details">
                                 <h6>Have Any Question</h6>
-                                <h3>+19524357106</h3>
+                                <h3>+92 3032740775</h3>
                             </div>
                         </div>
-                        <a class="btn btn-base" href="contact.html">CONTACT US</a>
+                        <a class="btn btn-base" href="contact.php">CONTACT US</a>
                     </div>
                 </div>
             </div>
@@ -540,13 +452,12 @@
                             <img src="assetstwo/img/blog/1.png" alt="img">
                         </div>
                         <div class="details">
-                            <h4><a href="blog-details.html">Express delivery is going to
+                            <h4><a href="javascript:void(0)">Express delivery is going to
                                 slow down in 2022</a></h4>
                             <ul class="blog-meta">
                                 <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
                                 <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
                             </ul>
-                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -556,13 +467,12 @@
                             <img src="assetstwo/img/blog/2.png" alt="img">
                         </div>
                         <div class="details">
-                            <h4><a href="blog-details.html">USA exhibition support for
+                            <h4><a href="javascript:void(0)">USA exhibition support for
                                 teneso NewYork.</a></h4>
                             <ul class="blog-meta">
                                 <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
                                 <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
                             </ul>
-                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -572,13 +482,12 @@
                             <img src="assetstwo/img/blog/3.png" alt="img">
                         </div>
                         <div class="details">
-                            <h4><a href="blog-details.html">New Additions to our great
+                            <h4><a href="javascript:void(0)">New Additions to our great
                                 Metro trucks.</a></h4>
                             <ul class="blog-meta">
                                 <li><i class="fa fa-user"></i> By <a class="ms-1" href="#"> Admin</a></li>
                                 <li><i class="fas fa-calendar-alt"></i> 01 July, 2022</li>
                             </ul>
-                            <a class="read-more-text" href="blog-details.html">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -634,7 +543,6 @@
         </div>
     </div>
     <!--partner-area end-->
-
        <?php include 'home-footer.php';?>
     </div>
   

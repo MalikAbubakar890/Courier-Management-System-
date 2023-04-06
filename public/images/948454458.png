@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="http://skylarkequipment.com/public/images/favicon/favicon.png" rel="icon">
+<title> Sarck Solution </title>
+<meta name="keywords" content="Industrial Equipment , Equipment , Industrial , Services , Providers , Contact US" />
+<meta name="description" content="Sky Lark Industrial Equipments has a highly skilled machine repair team that can rebuild and refurshib your machinary offering a cost-effective alternative to buying new. While many machine repair and refurbishment job can be completed on-site,our fully equipped faculity can accommodate major tasks with speed and efficiency, minimizing downtime">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="https://skylarkequipment.com/public/img/logos/logo.jpg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/icomoon.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/rev-settings.css">
+<link rel="stylesheet" href="http://skylarkequipment.com/public/css/animate.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/switcher.css">
+<link rel="stylesheet" href="http://skylarkequipment.com/public/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/slider.css">
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/default.css">
+<script src="http://skylarkequipment.com/public/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://skylarkequipment.com/public/css/styles.css" id="colors">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<input type="hidden" value="http://skylarkequipment.com" id="url" name="url">
+<meta property="og:url" content="http://skylarkequipment.com/public/images/948454458.png"/>
+<meta property="og:site_name" content="Sky Lark Industrial Equipment"/>
+<meta property="og:type" content="website"/>
+<link rel="canonical" href="http://skylarkequipment.com/public/images/948454458.png">
+<!-- <div id="preloader">
+ <div class="row loader">
+    <div class="loader-icon"></div>
+ </div>
+</div> -->
+<div id="top-bar" class="hidden-sm-down">
+ <div class="container">
+    <div class="row">
+       <div class="col-md-9 col-12">
+          <div class="top-bar-welcome">
+             <ul>
+                <li>Sky Lark Industrial Equipment Trading LLC</li>
+             </ul>
+          </div>
+          <div class="top-bar-info">
+             <ul>
+                <li><i class="fa fa-phone"></i>+971527180016
+                <li> 
+                <li><i class="fa fa-envelope"></i>sales@skylarkequipment.com
+                <li> 
+             </ul>
+          </div>
+       </div>
+       <div class="col-md-3 col-12">
+         
+          <ul class="social-icons hidden-md-down">
+                        <li><a href="https://www.facebook.com/profile.php?id=100081625701781"><i class="fa fa-facebook-square"></i></a></li>
+                                                      </ul>
+       </div>
+    </div>
+ </div>
+</div></head>
+<body>
+    <header>
+ <nav id="navigation4" class="container navigation">
+    <div class="nav-header">
+       <a class="nav-brand" href="http://skylarkequipment.com"> <img src="http://skylarkequipment.com/public/img/logos/logo.jpg" class="main-logo" alt="logo" id="main_logo"> </a> 
+       <div class="nav-toggle"></div>
+    </div>
+    <div class="nav-menus-wrapper">
+       <ul class="nav-menu align-to-right">
+          <li>
+             <a href="http://skylarkequipment.com">Home</a>
+          </li>
+          <li>
+             <a href="http://skylarkequipment.com/aboutus">About</a>
+          </li>
+          <li>
+             <a href="http://skylarkequipment.com/services">Services</a> 
+          </li>
+          <li>
+             <a href="http://skylarkequipment.com/our-blogs">Blog</a>            
+          </li>
+          <li>
+             <a href="http://skylarkequipment.com/contactus">Contact</a> 
+             
+          </li>
+       </ul>
+    </div>
+ </nav>
+</header>    <section class="page-404 mt--100 py-0">
+  <div class="bg-img"><img src="http://7oroof.com/demos/mintech/assets/images/banners/1.jpg" alt="background"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-center vh-100 error-wrapper">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h1 class="error-code">404</h1>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h2 class="error-title">Oops! That page can’t be found.</h2>
+            <p class="error-desc">The page requested couldn't be found. This could be a spelling error in the
+              URL or a removed page.
+            </p>
+            <a href="http://skylarkequipment.com" class="btn btn__primary btn__icon btn__xl">
+              <span>Back To Home</span> <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <a target="_BLANK" href="https://wa.me/+971527180016">
+
+    <div class="whatsapp active" style="
+    position: fixed;
+    cursor: pointer;
+    bottom: -100px;
+    left: 20px;
+    color: #fff;
+    background-color: #47c656;
+    z-index: 4;
+    width: 65px;
+    text-align: center;
+    height: 65px;
+    /* opacity: 0; */
+    visibility: hidden;
+    border-radius: 50%;
+    font-size: 42px;
+    -webkit-transition: .9s;
+    transition: .9s;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    visibility: visible;
+    bottom: 20px;
+"><i class="fa fa-whatsapp" style="
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+"></i></div>
+
+</a>
+
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-sm-6 col-12">
+            <h3>About Us</h3>
+            <div class="mt-25">
+               <p class="mt-25">This is the Test</p>
+               <div class="footer-social-icons mt-25">
+                                  <ul>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100081625701781"><i class="fa fa-facebook-square"></i></a></li>
+                                                                                                     
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 col-sm-6 col-12">
+            <h3>Quick Links</h3>
+            <ul class="footer-list">
+                             <li><a href="http://skylarkequipment.com/iron-machene-worker">Iron Machene Worker</a></li>
+                              <li><a href="http://skylarkequipment.com/graphic-designer">Metal sheet Rolling machine</a></li>
+                              <li><a href="http://skylarkequipment.com/over-head-crane-issues">Over Head Crane Issues</a></li>
+                              <li><a href="http://skylarkequipment.com/customer-relation-manegment">Electrical Control Panel</a></li>
+                              <li><a href="http://skylarkequipment.com/digital-marketing">Welding Machine</a></li>
+                           </ul>
+         </div>
+         <div class="col-md-4 col-sm-6 col-12">
+            <h3>Recent Posts</h3>
+            <div class="mt-25">
+                             <div class="footer-recent-post clearfix">
+                  <div class="footer-recent-post-thumb"> <img src="http://skylarkequipment.com/public/images/1207130061.jpeg" alt="img"> </div>
+                  <div class="footer-recent-post-content"> <span>2021-12-21 19:09:37</span> <a href="http://skylarkequipment.com/7-must-have-weldinproposed-infrastructure-bill-holds-opportunity-for-fabricatorsg-accessories">7 Must have WeldinProposed Infrastructure Bill Holds Opportunity for Fabricatorsg Accessories</a> </div>
+               </div>
+                              <div class="footer-recent-post clearfix">
+                  <div class="footer-recent-post-thumb"> <img src="http://skylarkequipment.com/public/images/2110672648.jpeg" alt="img"> </div>
+                  <div class="footer-recent-post-content"> <span>2021-12-21 19:10:55</span> <a href="http://skylarkequipment.com/what-drawings-do-i-need-to-get-an-accurate-fabrication-estimate">What Drawings Do I Need To Get An Accurate Fabrication Estimate?</a> </div>
+               </div>
+                              <div class="footer-recent-post clearfix">
+                  <div class="footer-recent-post-thumb"> <img src="http://skylarkequipment.com/public/images/1974791295.jpeg" alt="img"> </div>
+                  <div class="footer-recent-post-content"> <span>2021-12-21 19:12:53</span> <a href="http://skylarkequipment.com/recruiting-talented-skilled-workers-college-degree-not-required">Recruiting Talented Skilled Workers: College Degree Not Required</a> </div>
+               </div>
+                              
+            </div>
+         </div>
+         
+      </div>
+      <div class="footer-bar">
+         <p><span class="primary-color">Sarck Solution</span> © 2022. All Rights Reserved.</p>
+      </div>
+   </div>
+</footer>    <a href="#" class="scroll-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+<script src="http://skylarkequipment.com/public/js/popper.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/popper.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/bootstrap.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/owl.carousel.js"></script>
+<script src="http://skylarkequipment.com/public/js/navigation.js"></script>
+<script src="http://skylarkequipment.com/public/js/navigation.fixed.js"></script>
+<script src="http://skylarkequipment.com/public/js/wow.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/jquery.counterup.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/waypoints.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/tabs.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/jquery.mb.YTPlayer.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/swiper.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/isotope.pkgd.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/switcher.js"></script>
+<script src="http://skylarkequipment.com/public/js/modernizr.js"></script>
+<script src="http://skylarkequipment.com/public/js/map.js"></script>
+<script src="http://skylarkequipment.com/public/js/Chart.bundle.js"></script>
+<script src="http://skylarkequipment.com/public/js/utils.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/jquery.themepunch.revolution.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.actions.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.carousel.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.kenburn.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.layeranimation.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.migration-2.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.parallax.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.navigation.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.slideanims.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/revolution/revolution.extension.video.min.js"></script>
+<script src="http://skylarkequipment.com/public/js/main.js"></script></body>
+</html>
+
+
+
