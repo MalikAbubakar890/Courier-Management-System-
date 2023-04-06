@@ -1,5 +1,5 @@
 <?php include 'db_connect.php' ?>
-    <link rel="stylesheet" href="css/style.css" media="screen">
+    <!-- <link rel="stylesheet" href="css/style.css" media="screen"> -->
 <div class="col-lg-12">
 	<div class="card">
 		<div class="card-body">

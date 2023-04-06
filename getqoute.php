@@ -1,207 +1,186 @@
-<?php include 'db_connect.php'; ?>
-   
+
 
 <!DOCTYPE html>
 <html lang="en">
+  <?php include 'home-header.php'?>
 
-    <?php include 'home-header.php'?>
 
-<body class=" index browserunknown win  nojs lang-en">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ24PZJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-  
-    <input type="checkbox" id="navi-toggled">
-    
-    <?php include 'headtwo.php';?>
-    <main class="content clearfix">
+    <style type="text/css">
+        .toast {
+            opacity: 1 !important;
+            width: 100%;
+            height: 20px;
+            height: auto;
+            /*position: absolute;*/
+            right: 345px;
+            z-index: 1;
+            /*margin-left: -55px;*/
+            bottom: 183px;
+            background-color: #35bc7a;
+            color: #F0F0F0;
+            font-family: Calibri;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 7px;
+            -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+            -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+            box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+        }
+    </style>
 
-        <div class="row">
-            <div class="col">
-                <h1>Get a Qoute</h1>
-            </div>
-        </div>
-           
-    <form class="default" method="POST" action="getqoute.php">
-        <div class="row">
-            <div class="col medium-6">
-                 <?php
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\Exception;
-    
-        require 'PHPMailer-master/src/Exception.php';
-        require 'PHPMailer-master/src/PHPMailer.php';
-        require 'PHPMailer-master/src/SMTP.php';
-
-        if (isset($_POST['submit'])) {
-            $origin = $_POST['origin'];
-            $destination = $_POST['destination'];
-            $weight = $_POST['weight'];
-            $date = $_POST['date'];
-
-            $sql = "INSERT INTO qoutes (id, origin, destination, weight, date) VALUES (NULL, '$origin', '$destination', '$weight', '$date')";
-            $result = mysqli_query($conn, $sql);
-
-            $mail = new PHPMailer;
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'saadkhawaja045@gmail.com';
-            $mail->Password = 'nhyuojivefnuikoy'; 
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port = 465;
-            //Recipients
-            $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
-            $mail->addaddress('abubakar19417malik@gmail.com');     // Add a recipient 
-            $mail->addreplyto('saadkhawaja045@gmail.com');
-
-            $mail->isHTML(true);
-            $mail->Subject = 'Get Qoute' ;
-            $message = '<h4 style="display:inline-block;">Origin : </h4> '. $origin .'<br>
-            <h4 style="display:inline-block;">destination : </h4>   ' . $destination .'   <br> 
-            <h4 style="display:inline-block;">weight : </h4>   ' . $weight .'<br>  
-            <h4 style="display:inline-block;">date : </h4>   ' . $date .' <br>';
-            $mail->Body    = $message;
-            $mail->send();
-            // header("Location: getqoute.php"); 
-                ?>
-                <div class="toast">
-                    From Submitted Successfully
-                </div>
-                <?php
-
-                 }else{
-                    echo "";
-                 }
-                 ?>
-                <fieldset>
-                    <label for="origin">Origin <small>(required)</small></label>
-                    <input type="text" name="origin" class="form-control" required>
-                    <label for="destination">Destination <small>(required)</small></label>
-                    <input type="text" name="destination" class="form-control" required>
-                    <label>Weight (KG) <small>(required)</small></label>
-                    <input type="text" name="weight" placeholder="Enter Your Parcel Weight" class="form-control" required>
-                    <label>Date <small>(required)</small></label>
-                    <input type="date" name="date" placeholder="Enter Departure Date" class="form-control" required>
-                    <button type="submit" name="submit" class="button">Submit</button>
-                </fieldset>
-            </div>
-
-            <div class="col medium-6">
-                <img src="images\where-we-are-en.jfif">
-            </div>
-
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-    </form>
-
-    <div class="row"> <strong> With a presence in 70 countries across six continents, 42 offices, 2,500+ dedicated employees, and consistent, dependable services, Apex continues to grow rapidly and deliver passion worldwide.</strong></div>
-        <div class="subPageServices">
-            <div class="services">
+  <body class=" index browserunknown win  nojs lang-en">
+  <?php include 'headtwo.php'?>
+      <div class="breadcrumb-area bg-overlay-2" style="background-image:url('assetstwo/img/banner/breadcrumb.png')">
+            <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <strong class="headline-services animate">Explore Our Services </strong>
-                        <div class="teasers">
+                    <div class="col-12">
+                        <div class="breadcrumb-inner">
+                            <div class="section-title mb-0">
+                                <h2 class="page-title">Get Qoute</h2>
+                                <ul class="page-list">
+                                    <li><a href="index.php">Home</a></li>
+                                    <li>Get Qoute</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact-area mg-top-120 mb-120">
+                <div class="row g-0 justify-content-center">
+                    <div class="col-lg-7">
+                        <form class="contact-form text-center" method="POST" action="getqoute.php">
+                            <h3>Get a Qoute</h3>
+                            <?php
+                                include 'db_connect.php';
+                                use PHPMailer\PHPMailer\PHPMailer;
+                                use PHPMailer\PHPMailer\Exception;
+                            
+                                require 'PHPMailer-master/src/Exception.php';
+                                require 'PHPMailer-master/src/PHPMailer.php';
+                                require 'PHPMailer-master/src/SMTP.php';
+
+                                if (isset($_POST['submit'])) {
+                                    $origin = $_POST['origin'];
+                                    $destination = $_POST['destination'];
+                                    $weight = $_POST['weight'];
+                                    $date = $_POST['date'];
+
+                                    $sql = "INSERT INTO qoutes (id, origin, destination, weight, date) VALUES (NULL, '$origin', '$destination', '$weight', '$date')";
+                                    $result = mysqli_query($conn, $sql);
+
+                                    $mail = new PHPMailer;
+                                    $mail->isSMTP();
+                                    $mail->Host = 'smtp.gmail.com';
+                                    $mail->SMTPAuth = true;
+                                    $mail->Username = 'saadkhawaja045@gmail.com';
+                                    $mail->Password = 'nhyuojivefnuikoy'; 
+                                    $mail->SMTPSecure = 'ssl';
+                                    $mail->Port = 465;
+                                    //Recipients
+                                    $mail->setfrom('saadkhawaja045@gmail.com', 'Saad');
+                                    $mail->addaddress('abubakar19417malik@gmail.com');     // Add a recipient 
+                                    $mail->addreplyto('saadkhawaja045@gmail.com');
+
+                                    $mail->isHTML(true);
+                                    $mail->Subject = 'Get Qoute' ;
+                                    $message = '<h4 style="display:inline-block;">Origin : </h4> '. $origin .'<br>
+                                    <h4 style="display:inline-block;">destination : </h4>   ' . $destination .'   <br> 
+                                    <h4 style="display:inline-block;">weight : </h4>   ' . $weight .'<br>  
+                                    <h4 style="display:inline-block;">date : </h4>   ' . $date .' <br>';
+                                    $mail->Body    = $message;
+                                    $mail->send();
+                                    // header("Location: getqoute.php"); 
+                                        ?>
+                                        <div class="toast mb-3">
+                                            From Submitted Successfully
+                                        </div>
+                                        <?php
+
+                                         }else{
+                                            echo "";
+                                         }
+                                         ?>
                             <div class="row">
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="../what-we-do/transportation/air.html" class="teaser-content" title="Air Freight">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-plane" aria-hidden="true"></i>
-                                            <span>Air <span class="d-block">Freight</span></span></p>
-                                        <p>Reduce shipping times and costs with Apex group’s right-sized air freight solutions.</p>
-                                    </a>
+                                <div class="col-md-6">
+                                    <div class="single-input-inner">
+                                        <label><i class="fa fa-location-arrow"></i> </label>
+                                        <input type="text" name="origin" placeholder="Your origin" required>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate bl br">
-                                    <a href="../what-we-do/transportation/ocean.html" class="teaser-content" title="Ocean Freight">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-anchor" aria-hidden="true"></i>
-                                            <span>Ocean <span class="d-block">Freight</span></span></p>
-                                        <p>Accelerate shipping timeframes and maximize value while Apex manages your largest shipments.</p>
-                                    </a>
+                                <div class="col-md-6">
+                                    <div class="single-input-inner">
+                                        <label><i class="fa fa-location-arrow"></i></label>
+                                        <input type="text" name="destination" placeholder="Your Destination" required>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="../what-we-do/supply-chain/supply-chain-solutions.html" class="teaser-content" title="Global Supply Chain Management">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-cogs" aria-hidden="true"></i>
-                                            <span>Global Supply Chain Management</span></p>
-                                        <p>Unlock a competitive edge with objective insights and guidance from our experienced supply chain management consultants.</p>
-                                    </a>
+                                <div class="col-md-6">
+                                    <div class="single-input-inner">
+                                        <label><i class="fa fa-weight"></i> </label>
+                                        <input type="text" name="weight" placeholder="Weight (KG)" required>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="../what-we-do/warehousing-distribution/index.html" class="teaser-content" title="Warehousing and Distribution">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-sitemap" aria-hidden="true"></i>
-                                            <span>Warehousing and Distribution</span></p>
-                                        <p>Rest assured with Apex International managing products of every size with precision, security, and professional handling—every step of the way.</p>
-                                    </a>
+                                <div class="col-md-6">
+                                    <div class="single-input-inner">
+                                        <label><i class="fas fa-calendar-alt"></i></label>
+                                        <input type="date" name="date" placeholder="Date" required>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate bl br">
-                                    <a href="../what-we-do/transportation/surface.html" class="teaser-content" title="Inland Trucking">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-truck" aria-hidden="true"></i>
-                                            <span>Inland <span class="d-block">Trucking</span></span></p>
-                                        <p>Tap into our vast trucking network for reliable inland transportation—anywhere.</p>
-                                    </a>
+                                <div class="col-12">
+                                    <button class="btn btn-base" name="submit" href="#"> Get Qoute
+                                    </button>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="../what-we-do/warehousing-distribution/e-commerce-solutions.html" class="teaser-content" title="e-Commerce Soultions ">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-desktop" aria-hidden="true"></i>
-                                            <span>Cross-Border <span class="d-block">E-Commerce</span></span></p>
-                                        <p>Meet compliance and consumer expectations with our end-to-end, global E-Commerce solutions.</p>
-                                    </a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-information-wrap">
+                            <h3>CONTACT INFORMATION</h3>
+                            <div class="single-contact-info-wrap">
+                                <h6>Contact Number:</h6>
+                                <div class="media">
+                                    <div class="icon">
+                                        <svg class="svg-inline--fa fa-phone-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="phone-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg><!-- <i class="fa fa-phone-alt"></i> Font Awesome fontawesome.com -->
+                                    </div>
+                                    <div class="media-body">
+                                        <p>+92 3032740775 </p>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-4 teaser animate">
-                                    <a href="../what-we-do/customs/customs-brokerage.html" class="teaser-content" title="Customs Brokerage">
-                                        <p class="teaserHeadline">
-                                            <i class="circle fa-default fa-globe" aria-hidden="true"></i>
-                                            <span>Customs <span class="d-block">Brokerage</span></span></p>
-                                        <p>Eliminate unnecessary delays of your clearances with Apex’s trusted brokerage service.</p>
-                                    </a>
+                            </div>
+                            <div class="single-contact-info-wrap">
+                                <h6>Mail Address:</h6>
+                                <div class="media">
+                                    <div class="icon" style="background: #080C24;">
+                                        <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
+                                    </div>
+                                    <div class="media-body">
+                                        <p>info@apexlogistics.com</p>
+                                    </div>
                                 </div>
-                                <div class="col small-6 medium-8 teaser animate bl-l">
-                                    <p class="teaserHeadline">
-                                        Deliver a Powerful Customer Experience</p>
-                                    <div class="teaser-content">
-                                        <p>Maintaining customer loyalty and momentum in an on-demand, delivery culture starts with the subject matter experts. Learn how we can support your international freight shipments and business goals.</p>
-                                        <a href="contact.php" title="Contact us" class="btn">Let’s Talk</a>
+                            </div>
+                            <div class="single-contact-info-wrap mb-0">
+                                <h6>Office Location:</h6>
+                                <div class="media">
+                                    <div class="icon" style="background: #565969;">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker-alt"></i> Font Awesome fontawesome.com -->
+                                    </div>
+                                    <div class="media-body">
+                                        <p>shop, 5, Negin City Center, Kirani Rd, Hazara Town, Quetta, Balochistan 87300</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> <!-- //.services -->
+            </div>
         </div>
-    </main>
        <?php include 'home-footer.php';?>
     </div>
   
-    <style type="text/css">
-        .toast {
-    width: 515px;
-    height: 20px;
-    height: auto;
-    /*position: absolute;*/
-    right: 345px;
-    z-index: 1;
-    /*margin-left: -55px;*/
-    bottom: 183px;
-    background-color: #35bc7a;
-    color: #F0F0F0;
-    font-family: Calibri;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 7px;
-    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-}
-    </style>
+    
 
 </body>
 </html>

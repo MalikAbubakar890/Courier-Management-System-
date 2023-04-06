@@ -6,10 +6,24 @@ include('db_connect.php');
   ob_start();
   // if(!isset($_SESSION['system'])){
 
-    $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
-    foreach($system as $k => $v){
+
+$sql = "SELECT * FROM system_settings";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+     foreach($row as $k => $v){
       $_SESSION['system'][$k] = $v;
     }
+  }
+} else {
+  echo "0 results";
+}
+    // $system = $conn->query("")->fetch_array();
+    // foreach($system as $k => $v){
+    //   $_SESSION['system'][$k] = $v;
+    // }
   // }
   ob_end_flush();
 ?>

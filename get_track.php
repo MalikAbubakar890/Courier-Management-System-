@@ -244,14 +244,14 @@ $trackid = $_POST['track_id'];
 <style type="text/css">
   
 .toast {
-    width: 515px;
+    width: 449px;
     height: 20px;
     height: auto;
-    position: absolute;
-    right: 345px;
+    position: inherit;
+    right: 408px;
     z-index: 1;
-    margin-left: -55px;
-    bottom: 183px;
+    margin-left: 1px;
+    bottom: -144px;
     background-color: #35bc7a;
     color: #F0F0F0;
     font-family: Calibri;
